@@ -1,0 +1,722 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+    <link href="./assets/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css"/>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/b1ff58fb64.js" crossorigin="anonymous"></script>
+    <script src="./assets/main.js"> </script>
+  </head>
+  <body>
+    <div class="header"> 
+      <div class="top-header p-2 border-b hidden xl:flex xl:justify-between">
+        <div class="container"> 
+          <div class="hidden xl:flex xl:justify-between">
+            <div class="nav-top-left flex justify-center items-center">
+              <div class="language mr-4">
+                <div class="drop-down relative group"><a class="flex items-center" href="#"><img class="mr-1 w-5" src="./assets/image/uk.svg" alt=""/>English<span class="ml-2"> <i class="fas fa-chevron-down text-xs"></i></span></a>
+                  <div class="absolute opacity-0 invisible z-0 bg-white border border-white transform w-60 top-8 shadow-xl group-hover:visible   duration-200">
+                    <ul> 
+                      <li class="border-b px-6 py-4">Sellect Language</li>
+                      <li class="px-6 pt-6 pb-2 hover:bg-gray-100 "><a class="flex items-center" href="#"><img class="mr-3 w-5" src="./assets/image/uk.svg" alt=""/>English</a></li>
+                      <li class="py-2 px-6 hover:bg-gray-100 "><a class="flex items-center" href="#"><img class="mr-3 w-5" src="./assets/image/fr.svg" alt=""/>France</a></li>
+                      <li class="py-2 px-6 hover:bg-gray-100 "><a class="flex items-center" href="#"><img class="mr-3 w-5" src="./assets/image/gr.svg" alt=""/>Germany</a></li>
+                      <li class="py-2 px-6 hover:bg-gray-100 "><a class="flex items-center" href="#"><img class="mr-3 w-5" src="./assets/image/sp.svg" alt=""/>Spain</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="flex items-center justify-center">
+                <li class="mr-4"> <a href="#"><strong>Phone </strong> (024) 123-1457</a></li>
+                <li class="mr-4"> <a href="#"><strong>Email </strong>help@TravelGo.com</a></li>
+              </ul>
+            </div>
+            <div class="top-right-nav flex items-center justify-center">
+              <div class="account mr-4"><a href="#"><span class="mr-2"><i class="far text-gray-400 fa-user"></i></span>English<span> <i class="fas fa-chevron-down text-xs"></i></span></a></div>
+              <div class="contact mr-4"><a href="">Account </a></div>
+              <ul class="social flex justify-center items-center">
+                <li class="relative mr-4"> <a class="group" href="#"><img class="w-4 group-hover:opacity-0 group-hover:z-0 duration-200 ease-linear" src="./assets/image/facebook.svg" alt=""/><img class="opacity-0 absolute top-0 duration-200 ease-linear w-4  group-hover:opacity-100 group-hover:z-10" src="./assets/image/facebook-hover.svg" alt=""/></a></li>
+                <li class="relative mr-4"> <a class="group" href="#"><img class="w-4 group-hover:opacity-0 group-hover:z-0 duration-200 ease-linear" src="./assets/image/twitter.svg" alt=""/><img class="opacity-0 absolute top-0 duration-200 ease-linear w-4  group-hover:opacity-100 group-hover:z-10" src="./assets/image/twitter-hover.svg" alt=""/></a></li>
+                <li class="relative"> <a class="group" href="#"><img class="w-4 group-hover:opacity-0 group-hover:z-0 duration-200 ease-linear" src="./assets/image/instagram.svg" alt=""/><img class="opacity-0 absolute top-0 duration-200 ease-linear w-4  group-hover:opacity-100 group-hover:z-10" src="./assets/image/instagram-hover.svg" alt=""/></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="container flex justify-between items-center"> 
+          <div class="logo py-5"><a href="#"> <img class="w-44" src="./assets/image/logo-header.png" alt=""/></a></div>
+          <div class="right-content flex items-center justify-center">
+            <div class="menu hidden xl:flex"> 
+              <ul class="flex items-center"> 
+                <li> <a class="active py-6 px-2 flex items-center text-gray-400" href="#">Home <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
+                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Hotels <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
+                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Flights <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
+                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Cars <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
+                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Cruises <span class="text-sm"><i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
+                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Tour <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
+                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Pages <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
+                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Elements<span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
+              </ul>
+            </div>
+            <div class="icon flex">
+              <div class="mobile-menu relative visible xl:hidden px-2"><span class="group cursor-pointer"><img class="w-5 duration-200 ease-linear group-hover:opacity-0 group-hover:z-0 " src="./assets/image/menu.svg" alt=""/><img class="w-5 duration-200 ease-linear opacity-0 absolute top-0 group-hover:opacity-100 group-hover:z-10" src="./assets/image/menu-hover.svg" alt=""/></span></div>
+              <div class="search px-2"> <span> <i class="fas fa-search"></i></span></div>
+            </div>
+            <div class="button hidden ml-3 xl:inline-block">    
+              <button class="px-3 py-2 border rounded-md text-white hover:bg-blue-500 duration-500 ease-linear">Online Booking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="container"> 
+        <div class="flex items-center flex-wrap h-full">
+          <div class="heading"> 
+            <h4 class="text-lg font-bold">Lorem ipsum dolor sit amet</h4>
+            <h2 class="pt-5 text-6xl font-bold md:w-10/12">Sed ut perspiciatis unde omnis</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-box"> 
+      <div class="container"> 
+        <div class="tap-container">
+          <div class="-mt-40 grid grid-cols-5 text-white">
+            <input class="hidden" id="tab1" type="radio" name="tabs"/>
+            <label class="active p-5 text-lg font-bold border-t-4 border-green-500 flex justify-center items-center" for="tab1"><i class="mr-3 fas fa-utensils"></i><span class="hidden xl:inline-block">Hotels</span></label>
+            <input class="hidden" id="tab1" type="radio" name="tabs"/>
+            <label class="flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-helicopter"></i><span class="hidden xl:inline-block">Flight</span></label>
+            <input class="hidden" id="tab1" type="radio" name="tabs"/>
+            <label class="flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-car-side"></i><span class="hidden xl:inline-block">Cars</span></label>
+            <input class="hidden" id="tab1" type="radio" name="tabs"/>
+            <label class="flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-ship"></i><span class="hidden xl:inline-block">Cruises</span></label>
+            <input class="hidden" id="tab1" type="radio" name="tabs"/>
+            <label class="flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-route"></i><span class="hidden xl:inline-block">Tours</span></label>
+          </div>
+          <section class="px-4 py-6 bg-white shadow-lg" id="content-1">
+            <div class="a  lg:grid lg:grid-cols-12">
+              <div class="form-group mb-4 relative  focus:outline-none lg:col-span-4 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
+                <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="City, Point of Interest or U.S. Zip Code"/>
+              </div>
+              <div class="form-group mb-4 relative lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"> </span>
+                <input class="w-full pl-8 py-3 pr-4 border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Check-in"/>
+              </div>
+              <div class="form-group mb-4 relative  lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"></span>
+                <input class="pl-8 py-3 pr-4 border w-full focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Check-out"/>
+              </div>
+              <div class="form-group mb-4 relative  lg:col-span-1 lg:mb-0 lg:mr-4"> <img class="absolute right-1 w-3 bg-white z-0 transform  top-2/4 -translate-y-1/3" src="./assets/image/download.svg" alt=""/>
+                <select class="sellect bg-white w-full h-12 border pl-1 z-10 focus:outline-none focus:ring-1 focus:ring-yellow-500">
+                  <option selected="selected">Room </option>
+                  <option value="location 01">01</option>
+                  <option value="location 02">02</option>
+                  <option value="location 03">03</option>
+                  <option value="location 04">04</option>
+                  <option value="location 05">05</option>
+                </select>
+              </div>
+              <div class="form-group mb-4 relative lg:col-span-1 lg:mb-0 lg:mr-4"> <img class="absolute right-1 w-3 bg-white transform  top-2/4 -translate-y-1/3" src="./assets/image/download.svg" alt=""/>
+                <select class="sellect bg-white w-full h-12 border pl-1 focus:outline-none focus:ring-1 focus:ring-yellow-500">
+                  <option selected="selected">Guest </option>
+                  <option value="location 01">01</option>
+                  <option value="location 02">02</option>
+                  <option value="location 03">03</option>
+                  <option value="location 04">04</option>
+                  <option value="location 05">05</option>
+                </select>
+              </div>
+              <div class="form-group mb-4 lg:col-span-2 lg:mb-0 "> 
+                <button class="p-3 text-base w-full text-white rounded-sm duration ease-linear duration-200 hover:bg-black">Search</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="categories mt-20">
+      <div class="container"> 
+        <div class="title flex justify-between items-center mb-10">
+          <div class="left">
+            <h4 class="text-sm mb-2 text-blue-400">MOST POPULAR CITIES</h4>
+            <h2 class="text-2xl font-semibold">Popular Destination</h2>
+          </div>
+          <div class="right"> <a class="text-black" href="#">See all cities <i class="fas fa-angle-double-right ml-2"> </i></a></div>
+        </div>
+        <div class="cities-category lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-center">
+          <div class="image relative mb-10  z-10 lg:mb-0 -m-4 transform xl:translate-y-2"><img class="w-full rounded-lg hover:bg-yellow-300 z-10" src="./assets/image/home.jpg" alt=""/>
+            <div class="info absolute text-white bottom-1/4 transform translate-y-2/4 left-6">
+              <div class="city-name"> 
+                <p class="pt-2 pb-1 text-lg font-semibold">United Stage</p>
+                <h4 class="font-normal text-xs text-white">81 Cities</h4>
+              </div>
+            </div>
+          </div>
+          <div class="image-form lg:grid lg:grid-cols-2 lg:gap-y-8 lg:gap-x-4">
+            <div class="image relative mb-10 lg:mb-0"><img class="rounded-lg" src="./assets/image/home1.jpg" alt=""/>
+              <div class="info absolute text-white bottom-1/4 transform translate-y-2/4 left-6">
+                <div class="city-name"> 
+                  <p class="pt-2 pb-1 text-lg font-semibold">United Kingdom</p>
+                  <h4 class="font-normal text-xs text-white">81 Cities</h4>
+                </div>
+              </div>
+            </div>
+            <div class="image relative mb-10 lg:mb-0"><img class="rounded-lg" src="./assets/image/home2.jpg" alt=""/>
+              <div class="info absolute text-white bottom-1/4 transform translate-y-2/4 left-6">
+                <div class="city-name"> 
+                  <p class="pt-2 pb-1 text-lg font-semibold">Australia</p>
+                  <h4 class="font-normal text-xs text-white">81 Cities</h4>
+                </div>
+              </div>
+            </div>
+            <div class="image relative mb-10 lg:mb-0"><img class="rounded-lg" src="./assets/image/home3.jpg" alt=""/>
+              <div class="info absolute text-white bottom-1/4 transform translate-y-2/4 left-6">
+                <div class="city-name"> 
+                  <p class="pt-2 pb-1 text-lg font-semibold">Germany</p>
+                  <h4 class="font-normal text-xs text-white">81 Cities</h4>
+                </div>
+              </div>
+            </div>
+            <div class="image relative mb-10 lg:mb-0"><img class="rounded-lg" src="./assets/image/home4.jpg" alt=""/>
+              <div class="info absolute text-white bottom-1/4 transform translate-y-2/4 left-6">
+                <div class="city-name"> 
+                  <p class="pt-2 pb-1 text-lg font-semibold">India</p>
+                  <h4 class="font-normal text-xs text-white">81 Cities</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services mt-20"> 
+      <div class="container">
+        <div class="heading text-center mb-10">
+          <h2 class="text-2xl font-bold mb-5">OUR SERVICES</h2>
+          <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
+        </div>
+        <div class="content lg:grid lg:grid-cols-3">
+          <div class="card group text-center px-5 py-16 hover:bg-yellow-300 group-hover:text-white duration-200 ease-linear"><img class="w-20 mx-auto mb-5" src="./assets/image/check-mark.svg" alt=""/>
+            <div class="heading"> 
+              <h2 class="text-xl mb-3 group-hover:text-white duration-200 ease-linear">Hotel Booking</h2>
+              <p class="w-9/12 mx-auto group-hover:text-white duration-200 ease-linear lg:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet purus</p>
+            </div>
+          </div>
+          <div class="card group text-center px-5 py-16 hover:bg-yellow-300 group-hover:text-white duration-200 ease-linear"><img class="w-20 mx-auto mb-5" src="./assets/image/editor.svg" alt=""/>
+            <div class="heading"> 
+              <h2 class="text-xl mb-3 group-hover:text-white duration-200 ease-linear">Ticket Booking</h2>
+              <p class="w-9/12 mx-auto group-hover:text-white duration-200 ease-linear lg:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet</p>
+            </div>
+          </div>
+          <div class="card group text-center px-5 py-16 hover:bg-yellow-300 group-hover:text-white duration-200 ease-linear"><img class="w-20 mx-auto mb-5" src="./assets/image/envelope.svg" alt=""/>
+            <div class="heading"> 
+              <h2 class="text-xl mb-3 group-hover:text-white duration-200 ease-linear">Amazing Tour</h2>
+              <p class="w-9/12 mx-auto group-hover:text-white duration-200 ease-linear lg:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet purus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categories my-20">
+      <div class="container"> 
+        <div class="title flex justify-between items-center mb-10">
+          <div class="left">
+            <h4 class="text-sm mb-2 text-blue-400">STAY AND EAT LIKE A LOCAL</h4>
+            <h2 class="text-2xl font-semibold">Popular Hotels</h2>
+          </div>
+          <div class="right"> <a class="text-black" href="#">See all Hotels <i class="fas fa-angle-double-right ml-2"> </i></a></div>
+        </div>
+        <div class="content lg:grid lg:grid-cols-3 lg:gap-x-6">
+          <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
+            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room1.jpg" alt=""/>
+              <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
+                <button class="group-hover:opacity-100">read more </button>
+              </div>
+            </div>
+            <div class="info text-center lg:text-left">
+              <div class="heading py-6 border-b">
+                <h2 class="text-lg mb-2 lg:pl-6">Modern, Well-Appointed Room </h2>
+                <p class="w-10/12 mx-auto lg:w-full lg:px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p><a class="mt-4 flex items-center justify-center text-gray-500 lg:justify-start lg:px-6" href="#"><img class="mr-4 w-5 text-gray-200" src="./assets/image/compass.svg" alt=""/>Get directions </a>
+              </div>
+              <div class="review p-4 flex items-center justify-between lg:px-6">
+                <div class="price"> 
+                  <p> <span class="text-2xl text-blue-500 mr-1">$80</span>/ night</p>
+                </div>
+                <div class="rate text-yellow-400"><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="fas fa-star"> </i></div>
+              </div>
+            </div>
+          </div>
+          <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
+            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room2.jpg" alt=""/>
+              <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
+                <button class="group-hover:opacity-100">read more </button>
+              </div>
+            </div>
+            <div class="info text-center lg:text-left">
+              <div class="heading py-6 border-b">
+                <h2 class="text-lg mb-2 lg:pl-6">Modern, Well-Appointed Room </h2>
+                <p class="w-10/12 mx-auto lg:w-full lg:px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p><a class="mt-4 flex items-center justify-center text-gray-500 lg:justify-start lg:px-6" href="#"><img class="mr-4 w-5 text-gray-200" src="./assets/image/compass.svg" alt=""/>Get directions </a>
+              </div>
+              <div class="review p-4 flex items-center justify-between lg:px-6">
+                <div class="price"> 
+                  <p> <span class="text-2xl text-blue-500 mr-1">$80</span>/ night</p>
+                </div>
+                <div class="rate text-yellow-400"><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="fas fa-star"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
+            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room5.jpg" alt=""/>
+              <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
+                <button class="group-hover:opacity-100">read more </button>
+              </div>
+            </div>
+            <div class="info text-center lg:text-left">
+              <div class="heading py-6 border-b">
+                <h2 class="text-lg mb-2 lg:pl-6">Modern, Well-Appointed Room </h2>
+                <p class="w-10/12 mx-auto lg:w-full lg:px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p><a class="mt-4 flex items-center justify-center text-gray-500 lg:justify-start lg:px-6" href="#"><img class="mr-4 w-5 text-gray-200" src="./assets/image/compass.svg" alt=""/>Get directions </a>
+              </div>
+              <div class="review p-4 flex items-center justify-between lg:px-6">
+                <div class="price"> 
+                  <p> <span class="text-2xl text-blue-500 mr-1">$80</span>/ night</p>
+                </div>
+                <div class="rate text-yellow-400"><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="fas fa-star"> </i></div>
+              </div>
+            </div>
+          </div>
+          <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
+            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room6.jpg" alt=""/>
+              <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
+                <button class="group-hover:opacity-100">read more </button>
+              </div>
+            </div>
+            <div class="info text-center lg:text-left">
+              <div class="heading py-6 border-b">
+                <h2 class="text-lg mb-2 lg:pl-6">Modern, Well-Appointed Room </h2>
+                <p class="w-10/12 mx-auto lg:w-full lg:px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p><a class="mt-4 flex items-center justify-center text-gray-500 lg:justify-start lg:px-6" href="#"><img class="mr-4 w-5 text-gray-200" src="./assets/image/compass.svg" alt=""/>Get directions </a>
+              </div>
+              <div class="review p-4 flex items-center justify-between lg:px-6">
+                <div class="price"> 
+                  <p> <span class="text-2xl text-blue-500 mr-1">$80</span>/ night</p>
+                </div>
+                <div class="rate text-yellow-400"><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="fas fa-star"> </i></div>
+              </div>
+            </div>
+          </div>
+          <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
+            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room7.jpg" alt=""/>
+              <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
+                <button class="group-hover:opacity-100">read more </button>
+              </div>
+            </div>
+            <div class="info text-center lg:text-left">
+              <div class="heading py-6 border-b">
+                <h2 class="text-lg mb-2 lg:pl-6">Modern, Well-Appointed Room </h2>
+                <p class="w-10/12 mx-auto lg:w-full lg:px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p><a class="mt-4 flex items-center justify-center text-gray-500 lg:justify-start lg:px-6" href="#"><img class="mr-4 w-5 text-gray-200" src="./assets/image/compass.svg" alt=""/>Get directions </a>
+              </div>
+              <div class="review p-4 flex items-center justify-between lg:px-6">
+                <div class="price"> 
+                  <p> <span class="text-2xl text-blue-500 mr-1">$80</span>/ night</p>
+                </div>
+                <div class="rate text-yellow-400"><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="fas fa-star"> </i></div>
+              </div>
+            </div>
+          </div>
+          <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
+            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room8.jpg" alt=""/>
+              <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
+                <button class="group-hover:opacity-100">read more </button>
+              </div>
+            </div>
+            <div class="info text-center lg:text-left">
+              <div class="heading py-6 border-b">
+                <h2 class="text-lg mb-2 lg:pl-6">Modern, Well-Appointed Room </h2>
+                <p class="w-10/12 mx-auto lg:w-full lg:px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p><a class="mt-4 flex items-center justify-center text-gray-500 lg:justify-start lg:px-6" href="#"><img class="mr-4 w-5 text-gray-200" src="./assets/image/compass.svg" alt=""/>Get directions </a>
+              </div>
+              <div class="review p-4 flex items-center justify-between lg:px-6">
+                <div class="price"> 
+                  <p> <span class="text-2xl text-blue-500 mr-1">$80</span>/ night</p>
+                </div>
+                <div class="rate text-yellow-400"><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="mr-2 fas fa-star"> </i><i class="fas fa-star"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services mb-20 bg-gray-200 py-20">
+      <div class="container"> 
+        <div class="heading text-center mb-10">
+          <h2 class="text-2xl font-bold mb-5">DID YOU KNOW?</h2>
+          <p class="lg:w-8/12 lg:mx-auto">mauris ullamcorper nibh quis leo ultrices in hendrerit velit tristiqueut augue in nulla lacinia bibendum liberoras rutrum ac purus ut tristique. nullam placerat lacinia dolor quis pretium. phasellus vitae lacinia quam</p>
+        </div>
+        <div class="content mt-10 lg:grid lg:grid-cols-3 lg:gap-x-6">
+          <div class="feature mb-10 p-6 border bg-white overflow-hidden">
+            <div class="heading flex justify-start items-center"> <i class="text-6xl duration-400 ease-in-out text-yellow-300 transform fas fa-route -translate-x-3/4"></i>
+              <h3 class="text-xl font-bold duration-400 ease-in-out"> Best Travel Agent</h3>
+            </div>
+            <p class="my-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="text-black font-bold" href="#">see more!</a>
+          </div>
+          <div class="feature mb-10 p-6 border bg-white overflow-hidden">
+            <div class="heading flex justify-start items-center"> <i class="text-6xl duration-400 ease-in-out text-yellow-300 transform fab fa-avianex -translate-x-3/4"></i>
+              <h3 class="text-xl font-bold duration-400 ease-in-out"> Trust & Safety</h3>
+            </div>
+            <p class="my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="text-black font-bold" href="#">see more!</a>
+          </div>
+          <div class="feature mb-10 p-6 border bg-white overflow-hidden">
+            <div class="heading flex justify-start items-center"> <i class="text-6xl duration-400 ease-in-out text-yellow-300 transform fas fa-bullhorn -translate-x-3/4"></i>
+              <h3 class="text-xl font-bold duration-400 ease-in-out"> Best Price Guarantee</h3>
+            </div>
+            <p class="my-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="text-black font-bold" href="#">see more!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categories my-20">
+      <div class="container"> 
+        <div class="title flex justify-between items-center mb-10">
+          <div class="left">
+            <h4 class="text-sm mb-2 text-blue-400">STAY AND EAT LIKE A LOCAL</h4>
+            <h2 class="text-2xl font-semibold">Latest Cruises</h2>
+          </div>
+          <div class="right"> <a class="text-black" href="#">See all Cruises<i class="fas fa-angle-double-right ml-2"> </i></a></div>
+        </div>
+        <div class="slider owl-carousel owl-theme"> 
+          <div class="item px-3 rounded-t-lg">
+            <figure class="relative rounded-t-lg"><img class="rounded-t-xl" src="./assets/image/slide-1.jpg" alt=""/>
+              <div class="review absolute bottom-0 w-full flex justify-between items-center py-4 px-5 text-white">
+                <div class="rate text-yellow-300"> <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star"></i></div>
+                <div class="review-customer flex items-center">
+                  <div class="customer-review mr-5 text-xs"><strong class="text-sm">Very Good</strong><br/>27 Review </div>
+                  <div class="score px-3 py-4 font-semibold"> <span>5.00</span></div>
+                </div>
+              </div>
+            </figure>
+            <div class="info p-5 border bg-white">
+              <div class="location flex items-center justify-between pb-6 border-b border-dashed">
+                <div class="area"> 
+                  <h3 class="text-base font-bold mb-3">Asia & African Cruise</h3><a class="text-transform uppercase" href="#"> <i class="fas fa-map-marker-alt text-yellow-300 w-5"> </i>27th Brooklyn New York, USA</a>
+                </div>
+                <div class="price"> 
+                  <h3 class="text-xl font-bold">$ 200</h3>
+                </div>
+              </div>
+              <div class="description mt-3 pb-6 border-b border-dashed">
+                <p class="text-xs text-gray-400">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                <ul class="mt-5 flex items-center">
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-wifi"></i><span>Free wifi</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-parking"></i><span>Parking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-smoking-ban"> </i><span>Non Smoking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-utensils"></i><span>Restaurant </span></a></li>
+                </ul>
+              </div>
+              <div class="time flex items-center justify-between py-5">
+                <button class="px-4 py-2 rounded-lg text-white hover:bg-blue-500 duration-200 ease-linear">2 Day 3 Night </button>
+                <div class="react"> 
+                  <ul class="flex items-center">
+                    <li class="p-2 bg-blue-200 w-10 h-10">                                          <a href="#"><i class="fas fa-retweet"></i><span>Find Directions</span></a></li>
+                    <li class="w-10 h-10 bg-blue-200 flex items-center justify-center"><a href="#"><i class="fas fa-heart"> </i><span>Save</span></a></li>
+                    <li class="p-2 bg-blue-200 w-10 h-10 flex items-center justify-center"><a href="#"><i class="fas fa-map-marker-alt"></i><span>On the map</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item px-3 rounded-t-lg">
+            <figure class="relative rounded-t-lg"><img class="rounded-t-xl" src="./assets/image/slide-2.jpg" alt=""/>
+              <div class="review absolute bottom-0 w-full flex justify-between items-center py-4 px-5 text-white">
+                <div class="rate text-yellow-300"> <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star"></i></div>
+                <div class="review-customer flex items-center">
+                  <div class="customer-review mr-5 text-xs"><strong class="text-sm">Very Good</strong><br/>27 Review </div>
+                  <div class="score px-3 py-4 font-semibold"> <span>5.00</span></div>
+                </div>
+              </div>
+            </figure>
+            <div class="info p-5 border bg-white">
+              <div class="location flex items-center justify-between pb-6 border-b border-dashed">
+                <div class="area"> 
+                  <h3 class="text-base font-bold mb-3">Asia & African Cruise</h3><a class="text-transform uppercase" href="#"> <i class="fas fa-map-marker-alt text-yellow-300 w-5"> </i>27th Brooklyn New York, USA</a>
+                </div>
+                <div class="price"> 
+                  <h3 class="text-xl font-bold">$ 200</h3>
+                </div>
+              </div>
+              <div class="description mt-3 pb-6 border-b border-dashed">
+                <p class="text-xs text-gray-400">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                <ul class="mt-5 flex items-center">
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-wifi"></i><span>Free wifi</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-parking"></i><span>Parking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-smoking-ban"> </i><span>Non Smoking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-utensils"></i><span>Restaurant </span></a></li>
+                </ul>
+              </div>
+              <div class="time flex items-center justify-between py-5">
+                <button class="px-4 py-2 rounded-lg text-white hover:bg-blue-500 duration-200 ease-linear">2 Day 3 Night </button>
+                <div class="react"> 
+                  <ul class="flex items-center">
+                    <li class="p-2 bg-blue-200 w-10 h-10">                                          <a href="#"><i class="fas fa-retweet"></i><span>Find Directions</span></a></li>
+                    <li class="w-10 h-10 bg-blue-200 flex items-center justify-center"><a href="#"><i class="fas fa-heart"> </i><span>Save</span></a></li>
+                    <li class="p-2 bg-blue-200 w-10 h-10 flex items-center justify-center"><a href="#"><i class="fas fa-map-marker-alt"></i><span>On the map</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item px-3 rounded-t-lg">
+            <figure class="relative rounded-t-lg"><img class="rounded-t-xl" src="./assets/image/slide-3.jpg" alt=""/>
+              <div class="review absolute bottom-0 w-full flex justify-between items-center py-4 px-5 text-white">
+                <div class="rate text-yellow-300"> <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star"></i></div>
+                <div class="review-customer flex items-center">
+                  <div class="customer-review mr-5 text-xs"><strong class="text-sm">Very Good</strong><br/>27 Review </div>
+                  <div class="score px-3 py-4 font-semibold"> <span>5.00</span></div>
+                </div>
+              </div>
+            </figure>
+            <div class="info p-5 border bg-white">
+              <div class="location flex items-center justify-between pb-6 border-b border-dashed">
+                <div class="area"> 
+                  <h3 class="text-base font-bold mb-3">Asia & African Cruise</h3><a class="text-transform uppercase" href="#"> <i class="fas fa-map-marker-alt text-yellow-300 w-5"> </i>27th Brooklyn New York, USA</a>
+                </div>
+                <div class="price"> 
+                  <h3 class="text-xl font-bold">$ 200</h3>
+                </div>
+              </div>
+              <div class="description mt-3 pb-6 border-b border-dashed">
+                <p class="text-xs text-gray-400">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                <ul class="mt-5 flex items-center">
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-wifi"></i><span>Free wifi</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-parking"></i><span>Parking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-smoking-ban"> </i><span>Non Smoking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-utensils"></i><span>Restaurant </span></a></li>
+                </ul>
+              </div>
+              <div class="time flex items-center justify-between py-5">
+                <button class="px-4 py-2 rounded-lg text-white hover:bg-blue-500 duration-200 ease-linear">2 Day 3 Night </button>
+                <div class="react"> 
+                  <ul class="flex items-center">
+                    <li class="p-2 bg-blue-200 w-10 h-10">                                          <a href="#"><i class="fas fa-retweet"></i><span>Find Directions</span></a></li>
+                    <li class="w-10 h-10 bg-blue-200 flex items-center justify-center"><a href="#"><i class="fas fa-heart"> </i><span>Save</span></a></li>
+                    <li class="p-2 bg-blue-200 w-10 h-10 flex items-center justify-center"><a href="#"><i class="fas fa-map-marker-alt"></i><span>On the map</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item px-3 rounded-t-lg">
+            <figure class="relative rounded-t-lg"><img class="rounded-t-xl" src="./assets/image/slide-4.jpg" alt=""/>
+              <div class="review absolute bottom-0 w-full flex justify-between items-center py-4 px-5 text-white">
+                <div class="rate text-yellow-300"> <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star"></i></div>
+                <div class="review-customer flex items-center">
+                  <div class="customer-review mr-5 text-xs"><strong class="text-sm">Very Good</strong><br/>27 Review </div>
+                  <div class="score px-3 py-4 font-semibold"> <span>5.00</span></div>
+                </div>
+              </div>
+            </figure>
+            <div class="info p-5 border bg-white">
+              <div class="location flex items-center justify-between pb-6 border-b border-dashed">
+                <div class="area"> 
+                  <h3 class="text-base font-bold mb-3">Asia & African Cruise</h3><a class="text-transform uppercase" href="#"> <i class="fas fa-map-marker-alt text-yellow-300 w-5"> </i>27th Brooklyn New York, USA</a>
+                </div>
+                <div class="price"> 
+                  <h3 class="text-xl font-bold">$ 200</h3>
+                </div>
+              </div>
+              <div class="description mt-3 pb-6 border-b border-dashed">
+                <p class="text-xs text-gray-400">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                <ul class="mt-5 flex items-center">
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-wifi"></i><span>Free wifi</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-parking"></i><span>Parking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-smoking-ban"> </i><span>Non Smoking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-utensils"></i><span>Restaurant </span></a></li>
+                </ul>
+              </div>
+              <div class="time flex items-center justify-between py-5">
+                <button class="px-4 py-2 rounded-lg text-white hover:bg-blue-500 duration-200 ease-linear">2 Day 3 Night </button>
+                <div class="react"> 
+                  <ul class="flex items-center">
+                    <li class="p-2 bg-blue-200 w-10 h-10">                                          <a href="#"><i class="fas fa-retweet"></i><span>Find Directions</span></a></li>
+                    <li class="w-10 h-10 bg-blue-200 flex items-center justify-center"><a href="#"><i class="fas fa-heart"> </i><span>Save</span></a></li>
+                    <li class="p-2 bg-blue-200 w-10 h-10 flex items-center justify-center"><a href="#"><i class="fas fa-map-marker-alt"></i><span>On the map</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item px-3 rounded-t-lg">
+            <figure class="relative rounded-t-lg"><img class="rounded-t-xl" src="./assets/image/slide-5.jpg" alt=""/>
+              <div class="review absolute bottom-0 w-full flex justify-between items-center py-4 px-5 text-white">
+                <div class="rate text-yellow-300"> <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star"></i></div>
+                <div class="review-customer flex items-center">
+                  <div class="customer-review mr-5 text-xs"><strong class="text-sm">Very Good</strong><br/>27 Review </div>
+                  <div class="score px-3 py-4 font-semibold"> <span>5.00</span></div>
+                </div>
+              </div>
+            </figure>
+            <div class="info p-5 border bg-white">
+              <div class="location flex items-center justify-between pb-6 border-b border-dashed">
+                <div class="area"> 
+                  <h3 class="text-base font-bold mb-3">Asia & African Cruise</h3><a class="text-transform uppercase" href="#"> <i class="fas fa-map-marker-alt text-yellow-300 w-5"> </i>27th Brooklyn New York, USA</a>
+                </div>
+                <div class="price"> 
+                  <h3 class="text-xl font-bold">$ 200</h3>
+                </div>
+              </div>
+              <div class="description mt-3 pb-6 border-b border-dashed">
+                <p class="text-xs text-gray-400">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                <ul class="mt-5 flex items-center">
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-wifi"></i><span>Free wifi</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-parking"></i><span>Parking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-smoking-ban"> </i><span>Non Smoking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-utensils"></i><span>Restaurant </span></a></li>
+                </ul>
+              </div>
+              <div class="time flex items-center justify-between py-5">
+                <button class="px-4 py-2 rounded-lg text-white hover:bg-blue-500 duration-200 ease-linear">2 Day 3 Night </button>
+                <div class="react"> 
+                  <ul class="flex items-center">
+                    <li class="p-2 bg-blue-200 w-10 h-10">                                          <a href="#"><i class="fas fa-retweet"></i><span>Find Directions</span></a></li>
+                    <li class="w-10 h-10 bg-blue-200 flex items-center justify-center"><a href="#"><i class="fas fa-heart"> </i><span>Save</span></a></li>
+                    <li class="p-2 bg-blue-200 w-10 h-10 flex items-center justify-center"><a href="#"><i class="fas fa-map-marker-alt"></i><span>On the map</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item px-3 rounded-t-lg">
+            <figure class="relative rounded-t-lg"><img class="rounded-t-xl" src="./assets/image/slide-6.jpg" alt=""/>
+              <div class="review absolute bottom-0 w-full flex justify-between items-center py-4 px-5 text-white">
+                <div class="rate text-yellow-300"> <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star"></i></div>
+                <div class="review-customer flex items-center">
+                  <div class="customer-review mr-5 text-xs"><strong class="text-sm">Very Good</strong><br/>27 Review </div>
+                  <div class="score px-3 py-4 font-semibold"> <span>5.00</span></div>
+                </div>
+              </div>
+            </figure>
+            <div class="info p-5 border bg-white">
+              <div class="location flex items-center justify-between pb-6 border-b border-dashed">
+                <div class="area"> 
+                  <h3 class="text-base font-bold mb-3">Asia & African Cruise</h3><a class="text-transform uppercase" href="#"> <i class="fas fa-map-marker-alt text-yellow-300 w-5"> </i>27th Brooklyn New York, USA</a>
+                </div>
+                <div class="price"> 
+                  <h3 class="text-xl font-bold">$ 200</h3>
+                </div>
+              </div>
+              <div class="description mt-3 pb-6 border-b border-dashed">
+                <p class="text-xs text-gray-400">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                <ul class="mt-5 flex items-center">
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-wifi"></i><span>Free wifi</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-parking"></i><span>Parking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-smoking-ban"> </i><span>Non Smoking</span></a></li>
+                  <li class="text-blue-200"> <a href="#"><i class="fas fa-utensils"></i><span>Restaurant </span></a></li>
+                </ul>
+              </div>
+              <div class="time flex items-center justify-between py-5">
+                <button class="px-4 py-2 rounded-lg text-white hover:bg-blue-500 duration-200 ease-linear">2 Day 3 Night </button>
+                <div class="react"> 
+                  <ul class="flex items-center">
+                    <li class="p-2 bg-blue-200 w-10 h-10">                                          <a href="#"><i class="fas fa-retweet"></i><span>Find Directions</span></a></li>
+                    <li class="w-10 h-10 bg-blue-200 flex items-center justify-center"><a href="#"><i class="fas fa-heart"> </i><span>Save</span></a></li>
+                    <li class="p-2 bg-blue-200 w-10 h-10 flex items-center justify-center"><a href="#"><i class="fas fa-map-marker-alt"></i><span>On the map</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chose mb-20 bg-gray-100 py-20">
+      <div class="container"> 
+        <div class="heading text-center mb-10">
+          <h2 class="text-2xl font-bold mb-5">WHY CHOOSE US</h2>
+          <p class="lg:w-8/12 lg:mx-auto">Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
+        </div>
+        <div class="content grid grid-cols-2 gap-6 lg:grid-cols-4">
+          <div class="booking p-4 text-center bg-white flex flex-col">   
+            <h2 class="text-gray-300 mb-5 text-6xl">01</h2><i class="fas fa-road text-6xl text-blue-400"></i><a class="text-black text-xl mt-4" href="#">Rail Booking</a>
+          </div>
+          <div class="booking p-4 text-center bg-white flex flex-col">   
+            <h2 class="text-gray-300 mb-5 text-6xl">02</h2><i class="fas fa-utensils text-6xl text-blue-400"></i><a class="text-black text-xl mt-4" href="#">Hotel Booking</a>
+          </div>
+          <div class="booking p-4 text-center bg-white flex flex-col">   
+            <h2 class="text-gray-300 mb-5 text-6xl">03</h2><i class="fas fa-ticket-alt text-6xl text-blue-400"></i><a class="text-black text-xl mt-4" href="#">Ticket Booking</a>
+          </div>
+          <div class="booking p-4 text-center bg-white flex flex-col">   
+            <h2 class="text-gray-300 mb-5 text-6xl">04</h2><i class="fas fa-child text-6xl text-blue-400"></i><a class="text-black text-xl mt-4" href="#">Amazing Booking</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="packages mb-20"> 
+      <div class="container"> 
+        <div class="heading text-center mb-10">
+          <h2 class="text-2xl font-bold mb-5">PRICING PACKAGES</h2>
+          <p class="lg:w-8/12 lg:mx-auto">lorem ipsum dolor sit amet, consectetur adipisicing suscipit votas aperiam sorem ipsum dolor consectur adipisicing elit.</p>
+        </div>
+        <div class="package-container grid grid-cols-1 gap-y-10 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-10">
+          <div class="package text-center border px-4 py-14 shadow-lg bg-gray-50 duration-200 ease-linear hover:bg-white">
+            <h2 class="text-xl font-semibold">Honneymoon Package </h2>
+            <div class="price mt-2 mb-3"> 
+              <p> <span class="blue text-5xl font-semibold"><sup class="text-3xl">$</sup>20</span><span class="block">/Day</span></p>
+            </div>
+            <div class="description mb-5"> 
+              <p>4 nights in Honeymoon Suite.</p>
+              <p>Private luxury airport transfer.</p>
+              <p>Daily breakfast your suite.</p>
+            </div>
+            <button class="order">Order now!</button>
+          </div>
+          <div class="package relative text-center border px-4 py-14 shadow-lg bg-white duration-200 ease-linear hover:bg-white">
+            <h2 class="text-xl font-semibold">Family Package </h2>
+            <div class="ribbon">   <span class="popular text-white bg-yellow-300">POPPULAR</span></div>
+            <div class="price mt-2 mb-3"> 
+              <p> <span class="blue text-5xl font-semibold"><sup class="text-3xl">$</sup>50</span><span class="block">/Day</span></p>
+            </div>
+            <div class="description mb-5"> 
+              <p>4 nights in Honeymoon Suite.</p>
+              <p>Private luxury airport transfer.</p>
+              <p>Daily breakfast your suite.</p>
+            </div>
+            <button class="order blue">Order now!</button>
+          </div>
+          <div class="package text-center border px-4 py-14 shadow-lg bg-gray-50 duration-200 ease-linear hover:bg-white">
+            <h2 class="text-xl font-semibold">All Inclusive</h2>
+            <div class="price mt-2 mb-3"> 
+              <p> <span class="blue text-5xl font-semibold"><sup class="text-3xl">$</sup>90</span><span class="block">/Day</span></p>
+            </div>
+            <div class="description mb-5"> 
+              <p>4 nights in Honeymoon Suite.</p>
+              <p>Private luxury airport transfer.</p>
+              <p>Daily breakfast your suite.</p>
+            </div>
+            <button class="order">Order now!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-overlay"> 
+      <div class="container flex items-center justify-center">
+        <div class="content z-10 p-6 w-full text-center lg:w-2/4 lg:mx-auto">
+          <p class="text-2xl text-black">21,215+ Hotel and Resorts Available!</p>
+          <form class="flex relative lg:mt-5" action="#"> 
+            <input class="text-black px-2 py-3 w-full border rounded-r-lg form-control" type="text" name="search" placeholder="Enter destination"/><span class="h-full items-center flex text-white px-3 text-base rounded-lg absolute top-0 right-0">Search now</span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer"> 
+      <div class="container"> 
+        <div class="intro"><img class="w-40" src="./assets/image/logo-footer.png" alt=""/></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1077 @@
+html
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet")
+        link(href="./assets/css/style.css" rel="stylesheet")
+        link(rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css")
+        link(rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet")
+        link( rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css")
+        link( rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css")
+
+        script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+        script(src="./assets/owlcarousel/owl.carousel.min.js")
+        script(src='https://kit.fontawesome.com/b1ff58fb64.js' crossorigin='anonymous')
+        script(src="./assets/main.js") 
+
+
+
+    body
+        .header 
+
+            .top-header.p-2.border-b.hidden(class="xl:flex xl:justify-between")
+
+                .container 
+                
+                    .hidden(class="xl:flex xl:justify-between")
+
+                        .nav-top-left.flex.justify-center.items-center
+
+                            .language.mr-4
+                                .drop-down.relative.group
+                                    a.flex.items-center(href="#")
+                                        img.mr-1.w-5(src="./assets/image/uk.svg", alt="") 
+                                        | English
+                                        span.ml-2 
+                                            i.fas.fa-chevron-down.text-xs
+                                    .absolute.opacity-0.invisible.z-0.bg-white.border.border-white.transform.w-60.top-8.shadow-xl(class="group-hover:visible   duration-200")
+                                        ul  
+                                            li.border-b.px-6.py-4 Sellect Language
+
+
+                                            li.px-6.pt-6.pb-2(class="hover:bg-gray-100 ")
+
+                                                a.flex.items-center(href="#")
+                                                    img.mr-3.w-5(src="./assets/image/uk.svg", alt="") 
+                                                    | English
+                                            li.py-2.px-6(class="hover:bg-gray-100 ")
+                                                a.flex.items-center(href="#")
+                                                    img.mr-3.w-5(src="./assets/image/fr.svg", alt="") 
+                                                    | France
+                                            li.py-2.px-6(class="hover:bg-gray-100 ")
+                                                a.flex.items-center(href="#")
+                                                    img.mr-3.w-5(src="./assets/image/gr.svg", alt="") 
+                                                    | Germany
+                                            li.py-2.px-6(class="hover:bg-gray-100 ")
+                                                a.flex.items-center(href="#")
+                                                    img.mr-3.w-5(src="./assets/image/sp.svg", alt="") 
+                                                    | Spain
+
+                            
+                            ul.flex.items-center.justify-center
+                                li.mr-4 
+                                    a(href="#")
+                                        strong Phone 
+                                        |  (024) 123-1457
+                                li.mr-4 
+                                    a(href="#")
+                                        strong Email 
+                                        | help@TravelGo.com
+                        
+                        .top-right-nav.flex.items-center.justify-center
+
+                            .account.mr-4
+                                a(href="#")
+                                        span.mr-2
+                                            i.far.text-gray-400.fa-user
+                                        | English
+                                        span 
+                                            i.fas.fa-chevron-down.text-xs
+                            .contact.mr-4
+                                a(href="") Account 
+                            
+                            ul.social.flex.justify-center.items-center
+
+                                li.relative.mr-4 
+                                    a.group(href="#")
+                                        img.w-4( class="group-hover:opacity-0 group-hover:z-0 duration-200 ease-linear" src="./assets/image/facebook.svg", alt="")  
+                                        img.opacity-0.absolute.top-0.duration-200.ease-linear.w-4( class=" group-hover:opacity-100 group-hover:z-10" src="./assets/image/facebook-hover.svg", alt="")  
+                                li.relative.mr-4 
+                                    a.group(href="#")
+                                        img.w-4( class="group-hover:opacity-0 group-hover:z-0 duration-200 ease-linear" src="./assets/image/twitter.svg", alt="")  
+                                        img.opacity-0.absolute.top-0.duration-200.ease-linear.w-4( class=" group-hover:opacity-100 group-hover:z-10" src="./assets/image/twitter-hover.svg", alt="")  
+                                li.relative 
+                                    a.group(href="#")
+                                        img.w-4( class="group-hover:opacity-0 group-hover:z-0 duration-200 ease-linear" src="./assets/image/instagram.svg", alt="")  
+                                        img.opacity-0.absolute.top-0.duration-200.ease-linear.w-4( class=" group-hover:opacity-100 group-hover:z-10" src="./assets/image/instagram-hover.svg", alt="")  
+
+
+            .main-header
+
+                .container.flex.justify-between.items-center 
+
+                    .logo.py-5
+                        a(href="#") 
+                            img.w-44(src="./assets/image/logo-header.png", alt="")
+
+                    .right-content.flex.items-center.justify-center
+                        .menu.hidden(class="xl:flex") 
+                            ul.flex.items-center  
+                                li 
+                                    a.active.py-6.px-2.flex.items-center.text-gray-400(href="#")
+                                        | Home 
+                                        span 
+                                            i.fas.fa-chevron-down.text-xs.ml-1
+                                li 
+                                    a.py-6.px-2.flex.items-center.text-gray-400(href="#")
+                                        | Hotels 
+                                        span 
+                                            i.fas.fa-chevron-down.text-xs.ml-1
+                                li 
+                                    a.py-6.px-2.flex.items-center.text-gray-400(href="#")
+                                        | Flights 
+                                        span 
+                                            i.fas.fa-chevron-down.text-xs.ml-1
+                                li 
+                                    a.py-6.px-2.flex.items-center.text-gray-400(href="#")
+                                        | Cars 
+                                        span 
+                                            i.fas.fa-chevron-down.text-xs.ml-1
+                                li 
+                                    a.py-6.px-2.flex.items-center.text-gray-400(href="#")
+                                        | Cruises 
+                                        span.text-sm
+                                            i.fas.fa-chevron-down.text-xs.ml-1
+                                li 
+                                    a.py-6.px-2.flex.items-center.text-gray-400(href="#")
+                                        | Tour 
+                                        span 
+                                            i.fas.fa-chevron-down.text-xs.ml-1
+                                li 
+                                    a.py-6.px-2.flex.items-center.text-gray-400(href="#")
+                                        | Pages 
+                                        span 
+                                            i.fas.fa-chevron-down.text-xs.ml-1
+                                li 
+                                    a.py-6.px-2.flex.items-center.text-gray-400(href="#")
+                                        | Elements
+                                        span 
+                                            i.fas.fa-chevron-down.text-xs.ml-1
+                                
+
+                        .icon.flex
+                            .mobile-menu.relative.visible(class="xl:hidden").px-2
+                                span.group.cursor-pointer
+                                    img.w-5.duration-200.ease-linear( class="group-hover:opacity-0 group-hover:z-0 " src="./assets/image/menu.svg", alt="")
+                                    img.w-5.duration-200.ease-linear.opacity-0.absolute.top-0(class="group-hover:opacity-100 group-hover:z-10" src="./assets/image/menu-hover.svg", alt="")
+                            .search.px-2 
+                                span 
+                                    i.fas.fa-search
+                    
+                        .button.hidden.ml-3(class="xl:inline-block")     
+                            button.px-3.py-2.border.rounded-md.text-white(class="hover:bg-blue-500 duration-500 ease-linear") Online Booking
+
+
+        .hero
+            
+            .container 
+
+                .flex.items-center.flex-wrap.h-full
+                    .heading 
+                        h4.text-lg.font-bold Lorem ipsum dolor sit amet
+                        h2.pt-5.text-6xl.font-bold(class="md:w-10/12") Sed ut perspiciatis unde omnis
+
+        .feature-box 
+
+            .container 
+
+                .tap-container
+                    .-mt-40.grid.grid-cols-5.text-white
+
+                        input.hidden#tab1(type="radio" name="tabs" )
+                        label.active.p-5.text-lg.font-bold.border-t-4.border-green-500.flex.justify-center.items-center( for="tab1")
+                            i.mr-3.fas.fa-utensils
+                            span.hidden(class="xl:inline-block") Hotels
+
+                        input.hidden#tab1(type="radio" name="tabs" )
+                        label.flex.justify-center.items-center.p-5.text-lg.font-bold(for="tab1")
+                            i.mr-3.fas.fa-helicopter
+                            span.hidden(class="xl:inline-block") Flight
+                        
+                        input.hidden#tab1(type="radio" name="tabs" )
+                        label.flex.justify-center.items-center.p-5.text-lg.font-bold(for="tab1")
+                            i.mr-3.fas.fa-car-side
+                            span.hidden(class="xl:inline-block") Cars
+
+                        input.hidden#tab1(type="radio" name="tabs" )
+                        label.flex.justify-center.items-center.p-5.text-lg.font-bold(for="tab1")
+                            i.mr-3.fas.fa-ship
+                            span.hidden(class="xl:inline-block") Cruises
+
+                        input.hidden#tab1(type="radio" name="tabs" )
+                        label.flex.justify-center.items-center.p-5.text-lg.font-bold(for="tab1")
+                            i.mr-3.fas.fa-route
+                            span.hidden(class="xl:inline-block") Tours
+                
+                    section#content-1.px-4.py-6.bg-white.shadow-lg
+
+                        .a(class=" lg:grid lg:grid-cols-12")
+
+                            .form-group.mb-4.relative(class=" focus:outline-none lg:col-span-4 lg:mb-0 lg:mr-4")
+                                span.left-1.text-yellow-400.fas.fa-map-marker-alt
+                                    
+                                input.w-full.pl-8.py-3.pr-4.duration-200.ease-linear.border(class="focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="City, Point of Interest or U.S. Zip Code")
+
+                            .form-group.mb-4.relative(class="lg:col-span-2 lg:mb-0 lg:mr-4") 
+                                span.left-1.text-yellow-400.far.fa-calendar-alt 
+                                    
+                                input.w-full.pl-8.py-3.pr-4.border(class="focus:outline-none focus:ring-1 focus:ring-yellow-500"  type="text" placeholder="Check-in")
+
+                            .form-group.mb-4.relative(class=" lg:col-span-2 lg:mb-0 lg:mr-4") 
+                                span.left-1.text-yellow-400.far.fa-calendar-alt
+                                    
+                                input.pl-8.py-3.pr-4.border.w-full(class="focus:outline-none focus:ring-1 focus:ring-yellow-500"  type="text" placeholder="Check-out")
+                            
+                            .form-group.mb-4.relative(class=" lg:col-span-1 lg:mb-0 lg:mr-4") 
+                                img.absolute.right-1.w-3.bg-white.z-0.transform( class=" top-2/4 -translate-y-1/3" src="./assets/image/download.svg", alt="")
+
+                                select.sellect.bg-white.w-full.h-12.border.pl-1.z-10(class="focus:outline-none focus:ring-1 focus:ring-yellow-500" )
+                                    option(selected) Room 
+                                    option(value="location 01") 01
+                                    option(value="location 02") 02
+                                    option(value="location 03") 03
+                                    option(value="location 04") 04
+                                    option(value="location 05") 05
+
+                            .form-group.mb-4.relative(class="lg:col-span-1 lg:mb-0 lg:mr-4") 
+                                img.absolute.right-1.w-3.bg-white.transform( class=" top-2/4 -translate-y-1/3" src="./assets/image/download.svg", alt="")
+                                select.sellect.bg-white.w-full.h-12.border.pl-1(class="focus:outline-none focus:ring-1 focus:ring-yellow-500" )
+                                    option(selected) Guest 
+                                    option(value="location 01") 01
+                                    option(value="location 02") 02
+                                    option(value="location 03") 03
+                                    option(value="location 04") 04
+                                    option(value="location 05") 05
+
+                            .form-group.mb-4(class="lg:col-span-2 lg:mb-0 ") 
+                                button.p-3.text-base.w-full.text-white.rounded-sm.duration.ease-linear.duration-200(class="hover:bg-black") Search
+                                
+
+        .categories.mt-20
+
+            .container 
+                .title.flex.justify-between.items-center.mb-10
+
+                    .left
+                        h4.text-sm.mb-2.text-blue-400 MOST POPULAR CITIES
+                        h2.text-2xl.font-semibold Popular Destination
+                    .right 
+                        a.text-black(href="#")
+                            | See all cities 
+                            i.fas.fa-angle-double-right.ml-2 
+
+                .cities-category(class="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-center")
+
+                    .image.relative.mb-10(class=" z-10 lg:mb-0 -m-4 transform xl:translate-y-2")
+
+                        img.w-full.rounded-lg( class="hover:bg-yellow-300 z-10" src="./assets/image/home.jpg", alt="")
+                        
+                        .info.absolute.text-white(class="bottom-1/4 transform translate-y-2/4 left-6")
+                            
+                            .city-name 
+                                p.pt-2.pb-1.text-lg.font-semibold United Stage
+                                h4.font-normal.text-xs.text-white 81 Cities
+
+                    .image-form(class="lg:grid lg:grid-cols-2 lg:gap-y-8 lg:gap-x-4")
+                        
+                        .image.relative.mb-10(class="lg:mb-0")
+                            img.rounded-lg(src="./assets/image/home1.jpg", alt="")
+                        
+                            .info.absolute.text-white(class="bottom-1/4 transform translate-y-2/4 left-6")
+                                
+                                .city-name 
+                                    p.pt-2.pb-1.text-lg.font-semibold United Kingdom
+                                    h4.font-normal.text-xs.text-white 81 Cities
+
+                        .image.relative.mb-10(class="lg:mb-0")
+                            img.rounded-lg(src="./assets/image/home2.jpg", alt="")
+                        
+                            .info.absolute.text-white(class="bottom-1/4 transform translate-y-2/4 left-6")
+                                
+                                .city-name 
+                                    p.pt-2.pb-1.text-lg.font-semibold Australia
+                                    h4.font-normal.text-xs.text-white 81 Cities
+
+                        .image.relative.mb-10(class="lg:mb-0")
+                            img.rounded-lg(src="./assets/image/home3.jpg", alt="")
+                        
+                            .info.absolute.text-white(class="bottom-1/4 transform translate-y-2/4 left-6")
+                                
+                                .city-name 
+                                    p.pt-2.pb-1.text-lg.font-semibold Germany
+                                    h4.font-normal.text-xs.text-white 81 Cities
+
+                        .image.relative.mb-10(class="lg:mb-0")
+                            img.rounded-lg(src="./assets/image/home4.jpg", alt="")
+                        
+                            .info.absolute.text-white(class="bottom-1/4 transform translate-y-2/4 left-6")
+                                
+                                .city-name 
+                                    p.pt-2.pb-1.text-lg.font-semibold India
+                                    h4.font-normal.text-xs.text-white 81 Cities
+                        
+
+        .services.mt-20 
+
+            .container
+
+                .heading.text-center.mb-10
+
+                    h2.text-2xl.font-bold.mb-5 OUR SERVICES
+                    p Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.
+
+                .content(class="lg:grid lg:grid-cols-3")
+
+                    .card.group.text-center.px-5.py-16(class="hover:bg-yellow-300 group-hover:text-white duration-200 ease-linear")
+                        img.w-20.mx-auto.mb-5(src="./assets/image/check-mark.svg", alt="") 
+                        .heading 
+                            h2.text-xl.mb-3(class="group-hover:text-white duration-200 ease-linear") Hotel Booking
+                            p(class="w-9/12 mx-auto group-hover:text-white duration-200 ease-linear lg:w-full") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet purus
+                    
+                    .card.group.text-center.px-5.py-16(class="hover:bg-yellow-300 group-hover:text-white duration-200 ease-linear")
+                        img.w-20.mx-auto.mb-5(src="./assets/image/editor.svg", alt="") 
+                        .heading 
+                            h2.text-xl.mb-3(class="group-hover:text-white duration-200 ease-linear") Ticket Booking
+                            p(class="w-9/12 mx-auto group-hover:text-white duration-200 ease-linear lg:w-full" ) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet
+                    
+                    .card.group.text-center.px-5.py-16(class="hover:bg-yellow-300 group-hover:text-white duration-200 ease-linear")
+                        img.w-20.mx-auto.mb-5(src="./assets/image/envelope.svg", alt="") 
+                        .heading 
+                            h2.text-xl.mb-3(class="group-hover:text-white duration-200 ease-linear") Amazing Tour
+                            p(class="w-9/12 mx-auto group-hover:text-white duration-200 ease-linear lg:w-full") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet purus
+
+        
+        .categories.my-20
+
+            .container 
+
+                .title.flex.justify-between.items-center.mb-10
+
+                    .left
+                        h4.text-sm.mb-2.text-blue-400 STAY AND EAT LIKE A LOCAL
+                        h2.text-2xl.font-semibold Popular Hotels
+                    .right 
+                        a.text-black(href="#")
+                            | See all Hotels 
+                            i.fas.fa-angle-double-right.ml-2 
+                .content(class="lg:grid lg:grid-cols-3 lg:gap-x-6")
+                    .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
+                        .image.relative.group
+                            img.rounded-t-lg.duration-200(src="./assets/image/room1.jpg", alt="")
+                            .content 
+                                i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
+                                button(class="group-hover:opacity-100") read more 
+                        .info.text-center(class="lg:text-left")
+                            .heading.py-6.border-b
+
+                                h2.text-lg.mb-2(class="lg:pl-6") Modern, Well-Appointed Room 
+                                p(class="w-10/12 mx-auto lg:w-full lg:px-6") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                a.mt-4.flex.items-center.justify-center.text-gray-500(href="#" class="lg:justify-start lg:px-6")
+                                    img.mr-4.w-5.text-gray-200(src="./assets/image/compass.svg", alt="")
+                                    | Get directions 
+                            .review.p-4.flex.items-center.justify-between(class="lg:px-6")
+                                .price 
+                                    p 
+                                        span.text-2xl.text-blue-500.mr-1 $80
+                                        | / night
+
+                                .rate.text-yellow-400
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.fas.fa-star 
+                    
+                    .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
+                        .image.relative.group
+                            img.rounded-t-lg.duration-200(src="./assets/image/room2.jpg", alt="")
+                            .content 
+                                i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
+                                button(class="group-hover:opacity-100") read more 
+                        .info.text-center(class="lg:text-left")
+                            .heading.py-6.border-b
+
+                                h2.text-lg.mb-2(class="lg:pl-6") Modern, Well-Appointed Room 
+                                p(class="w-10/12 mx-auto lg:w-full lg:px-6") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                a.mt-4.flex.items-center.justify-center.text-gray-500(href="#" class="lg:justify-start lg:px-6")
+                                    img.mr-4.w-5.text-gray-200(src="./assets/image/compass.svg", alt="")
+                                    | Get directions 
+                            .review.p-4.flex.items-center.justify-between(class="lg:px-6")
+                                .price 
+                                    p 
+                                        span.text-2xl.text-blue-500.mr-1 $80
+                                        | / night
+
+                                .rate.text-yellow-400
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.fas.fa-star
+                    
+                    .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
+                        .image.relative.group
+                            img.rounded-t-lg.duration-200(src="./assets/image/room5.jpg", alt="")
+                            .content 
+                                i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
+                                button(class="group-hover:opacity-100") read more 
+                        .info.text-center(class="lg:text-left")
+                            .heading.py-6.border-b
+
+                                h2.text-lg.mb-2(class="lg:pl-6") Modern, Well-Appointed Room 
+                                p(class="w-10/12 mx-auto lg:w-full lg:px-6") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                a.mt-4.flex.items-center.justify-center.text-gray-500(href="#" class="lg:justify-start lg:px-6")
+                                    img.mr-4.w-5.text-gray-200(src="./assets/image/compass.svg", alt="")
+                                    | Get directions 
+                            .review.p-4.flex.items-center.justify-between(class="lg:px-6")
+                                .price 
+                                    p 
+                                        span.text-2xl.text-blue-500.mr-1 $80
+                                        | / night
+
+                                .rate.text-yellow-400
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.fas.fa-star  
+
+                    .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
+                        .image.relative.group
+                            img.rounded-t-lg.duration-200(src="./assets/image/room6.jpg", alt="")
+                            .content 
+                                i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
+                                button(class="group-hover:opacity-100") read more 
+                        .info.text-center(class="lg:text-left")
+                            .heading.py-6.border-b
+
+                                h2.text-lg.mb-2(class="lg:pl-6") Modern, Well-Appointed Room 
+                                p(class="w-10/12 mx-auto lg:w-full lg:px-6") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                a.mt-4.flex.items-center.justify-center.text-gray-500(href="#" class="lg:justify-start lg:px-6")
+                                    img.mr-4.w-5.text-gray-200(src="./assets/image/compass.svg", alt="")
+                                    | Get directions 
+                            .review.p-4.flex.items-center.justify-between(class="lg:px-6")
+                                .price 
+                                    p 
+                                        span.text-2xl.text-blue-500.mr-1 $80
+                                        | / night
+
+                                .rate.text-yellow-400
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.fas.fa-star 
+
+                    .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
+                        .image.relative.group
+                            img.rounded-t-lg.duration-200(src="./assets/image/room7.jpg", alt="")
+                            .content 
+                                i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
+                                button(class="group-hover:opacity-100") read more 
+                        .info.text-center(class="lg:text-left")
+                            .heading.py-6.border-b
+
+                                h2.text-lg.mb-2(class="lg:pl-6") Modern, Well-Appointed Room 
+                                p(class="w-10/12 mx-auto lg:w-full lg:px-6") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                a.mt-4.flex.items-center.justify-center.text-gray-500(href="#" class="lg:justify-start lg:px-6")
+                                    img.mr-4.w-5.text-gray-200(src="./assets/image/compass.svg", alt="")
+                                    | Get directions 
+                            .review.p-4.flex.items-center.justify-between(class="lg:px-6")
+                                .price 
+                                    p 
+                                        span.text-2xl.text-blue-500.mr-1 $80
+                                        | / night
+
+                                .rate.text-yellow-400
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.fas.fa-star 
+
+                            
+                    .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
+                        .image.relative.group
+                            img.rounded-t-lg.duration-200(src="./assets/image/room8.jpg", alt="")
+                            .content 
+                                i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
+                                button(class="group-hover:opacity-100") read more 
+                        .info.text-center(class="lg:text-left")
+                            .heading.py-6.border-b
+
+                                h2.text-lg.mb-2(class="lg:pl-6") Modern, Well-Appointed Room 
+                                p(class="w-10/12 mx-auto lg:w-full lg:px-6") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                a.mt-4.flex.items-center.justify-center.text-gray-500(href="#" class="lg:justify-start lg:px-6")
+                                    img.mr-4.w-5.text-gray-200(src="./assets/image/compass.svg", alt="")
+                                    | Get directions 
+                            .review.p-4.flex.items-center.justify-between(class="lg:px-6")
+                                .price 
+                                    p 
+                                        span.text-2xl.text-blue-500.mr-1 $80
+                                        | / night
+
+                                .rate.text-yellow-400
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.mr-2.fas.fa-star 
+                                    i.fas.fa-star
+
+
+        .services.mb-20.bg-gray-200.py-20
+
+            .container 
+
+                .heading.text-center.mb-10
+
+                    h2.text-2xl.font-bold.mb-5 DID YOU KNOW?
+                    p(class="lg:w-8/12 lg:mx-auto") mauris ullamcorper nibh quis leo ultrices in hendrerit velit tristiqueut augue in nulla lacinia bibendum liberoras rutrum ac purus ut tristique. nullam placerat lacinia dolor quis pretium. phasellus vitae lacinia quam
+                
+                .content.mt-10(class="lg:grid lg:grid-cols-3 lg:gap-x-6")
+
+                    .feature.mb-10.p-6.border.bg-white.overflow-hidden
+
+                        .heading.flex.justify-start.items-center 
+                            i.text-6xl.duration-400.ease-in-out.text-yellow-300.transform.fas.fa-route(class="-translate-x-3/4")
+                            h3.text-xl.font-bold.duration-400.ease-in-out  Best Travel Agent
+                        p.my-6  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        a.text-black.font-bold(href="#") see more!
+
+                    .feature.mb-10.p-6.border.bg-white.overflow-hidden
+
+                        .heading.flex.justify-start.items-center 
+                            i.text-6xl.duration-400.ease-in-out.text-yellow-300.transform.fab.fa-avianex(class="-translate-x-3/4")
+                            h3.text-xl.font-bold.duration-400.ease-in-out  Trust & Safety
+                        p.my-6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        a.text-black.font-bold(href="#") see more!
+
+                    .feature.mb-10.p-6.border.bg-white.overflow-hidden
+
+                        .heading.flex.justify-start.items-center 
+                            i.text-6xl.duration-400.ease-in-out.text-yellow-300.transform.fas.fa-bullhorn(class="-translate-x-3/4")
+                            h3.text-xl.font-bold.duration-400.ease-in-out  Best Price Guarantee
+                        p.my-6  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        a.text-black.font-bold(href="#") see more!
+
+
+        .categories.my-20
+
+            .container 
+
+                .title.flex.justify-between.items-center.mb-10
+
+                    .left
+                        h4.text-sm.mb-2.text-blue-400 STAY AND EAT LIKE A LOCAL
+                        h2.text-2xl.font-semibold Latest Cruises
+                    .right 
+                        a.text-black(href="#")
+                            | See all Cruises
+                            i.fas.fa-angle-double-right.ml-2 
+
+                .slider.owl-carousel.owl-theme 
+
+                    .item.px-3.rounded-t-lg
+
+                        figure.relative.rounded-t-lg
+                            img.rounded-t-xl(src="./assets/image/slide-1.jpg", alt="")
+                            .review.absolute.bottom-0.w-full.flex.justify-between.items-center.py-4.px-5.text-white
+                                .rate.text-yellow-300 
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star
+                                .review-customer.flex.items-center
+                                    .customer-review.mr-5.text-xs
+                                        strong.text-sm Very Good
+                                        br
+                                        | 27 Review 
+                                    .score.px-3.py-4.font-semibold 
+                                        span 5.00
+                        .info.p-5.border.bg-white
+                            .location.flex.items-center.justify-between.pb-6.border-b.border-dashed
+                                .area 
+                                    h3.text-base.font-bold.mb-3 Asia & African Cruise
+                                    a.text-transform.uppercase(href="#") 
+                                        i.fas.fa-map-marker-alt.text-yellow-300.w-5 
+                                        | 27th Brooklyn New York, USA
+                                .price 
+                                    h3.text-xl.font-bold $ 200
+                            .description.mt-3.pb-6.border-b.border-dashed
+                                p.text-xs.text-gray-400 Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.
+                                ul.mt-5.flex.items-center
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-wifi
+                                            span Free wifi
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-parking
+                                            span Parking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-smoking-ban 
+                                            span Non Smoking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-utensils
+                                            span Restaurant 
+                            .time.flex.items-center.justify-between.py-5
+                                button.px-4.py-2.rounded-lg.text-white(class="hover:bg-blue-500 duration-200 ease-linear") 2 Day 3 Night 
+                                .react 
+                                    ul.flex.items-center
+                                        li.p-2.bg-blue-200.w-10.h-10                                           
+                                            a(href="#")
+                                                i.fas.fa-retweet
+                                                span Find Directions
+                                        li.w-10.h-10.bg-blue-200.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-heart 
+                                                span Save
+                                        li.p-2.bg-blue-200.w-10.h-10.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-map-marker-alt
+                                                span On the map
+                    
+                    .item.px-3.rounded-t-lg
+
+                        figure.relative.rounded-t-lg
+                            img.rounded-t-xl(src="./assets/image/slide-2.jpg", alt="")
+                            .review.absolute.bottom-0.w-full.flex.justify-between.items-center.py-4.px-5.text-white
+                                .rate.text-yellow-300 
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star
+                                .review-customer.flex.items-center
+                                    .customer-review.mr-5.text-xs
+                                        strong.text-sm Very Good
+                                        br
+                                        | 27 Review 
+                                    .score.px-3.py-4.font-semibold 
+                                        span 5.00
+                        .info.p-5.border.bg-white
+                            .location.flex.items-center.justify-between.pb-6.border-b.border-dashed
+                                .area 
+                                    h3.text-base.font-bold.mb-3 Asia & African Cruise
+                                    a.text-transform.uppercase(href="#") 
+                                        i.fas.fa-map-marker-alt.text-yellow-300.w-5 
+                                        | 27th Brooklyn New York, USA
+                                .price 
+                                    h3.text-xl.font-bold $ 200
+                            .description.mt-3.pb-6.border-b.border-dashed
+                                p.text-xs.text-gray-400 Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.
+                                ul.mt-5.flex.items-center
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-wifi
+                                            span Free wifi
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-parking
+                                            span Parking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-smoking-ban 
+                                            span Non Smoking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-utensils
+                                            span Restaurant 
+                            .time.flex.items-center.justify-between.py-5
+                                button.px-4.py-2.rounded-lg.text-white(class="hover:bg-blue-500 duration-200 ease-linear") 2 Day 3 Night 
+                                .react 
+                                    ul.flex.items-center
+                                        li.p-2.bg-blue-200.w-10.h-10                                           
+                                            a(href="#")
+                                                i.fas.fa-retweet
+                                                span Find Directions
+                                        li.w-10.h-10.bg-blue-200.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-heart 
+                                                span Save
+                                        li.p-2.bg-blue-200.w-10.h-10.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-map-marker-alt
+                                                span On the map
+                    .item.px-3.rounded-t-lg
+
+                        figure.relative.rounded-t-lg
+                            img.rounded-t-xl(src="./assets/image/slide-3.jpg", alt="")
+                            .review.absolute.bottom-0.w-full.flex.justify-between.items-center.py-4.px-5.text-white
+                                .rate.text-yellow-300 
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star
+                                .review-customer.flex.items-center
+                                    .customer-review.mr-5.text-xs
+                                        strong.text-sm Very Good
+                                        br
+                                        | 27 Review 
+                                    .score.px-3.py-4.font-semibold 
+                                        span 5.00
+                        .info.p-5.border.bg-white
+                            .location.flex.items-center.justify-between.pb-6.border-b.border-dashed
+                                .area 
+                                    h3.text-base.font-bold.mb-3 Asia & African Cruise
+                                    a.text-transform.uppercase(href="#") 
+                                        i.fas.fa-map-marker-alt.text-yellow-300.w-5 
+                                        | 27th Brooklyn New York, USA
+                                .price 
+                                    h3.text-xl.font-bold $ 200
+                            .description.mt-3.pb-6.border-b.border-dashed
+                                p.text-xs.text-gray-400 Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.
+                                ul.mt-5.flex.items-center
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-wifi
+                                            span Free wifi
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-parking
+                                            span Parking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-smoking-ban 
+                                            span Non Smoking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-utensils
+                                            span Restaurant 
+                            .time.flex.items-center.justify-between.py-5
+                                button.px-4.py-2.rounded-lg.text-white(class="hover:bg-blue-500 duration-200 ease-linear") 2 Day 3 Night 
+                                .react 
+                                    ul.flex.items-center
+                                        li.p-2.bg-blue-200.w-10.h-10                                           
+                                            a(href="#")
+                                                i.fas.fa-retweet
+                                                span Find Directions
+                                        li.w-10.h-10.bg-blue-200.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-heart 
+                                                span Save
+                                        li.p-2.bg-blue-200.w-10.h-10.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-map-marker-alt
+                                                span On the map
+                    .item.px-3.rounded-t-lg
+
+                        figure.relative.rounded-t-lg
+                            img.rounded-t-xl(src="./assets/image/slide-4.jpg", alt="")
+                            .review.absolute.bottom-0.w-full.flex.justify-between.items-center.py-4.px-5.text-white
+                                .rate.text-yellow-300 
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star
+                                .review-customer.flex.items-center
+                                    .customer-review.mr-5.text-xs
+                                        strong.text-sm Very Good
+                                        br
+                                        | 27 Review 
+                                    .score.px-3.py-4.font-semibold 
+                                        span 5.00
+                        .info.p-5.border.bg-white
+                            .location.flex.items-center.justify-between.pb-6.border-b.border-dashed
+                                .area 
+                                    h3.text-base.font-bold.mb-3 Asia & African Cruise
+                                    a.text-transform.uppercase(href="#") 
+                                        i.fas.fa-map-marker-alt.text-yellow-300.w-5 
+                                        | 27th Brooklyn New York, USA
+                                .price 
+                                    h3.text-xl.font-bold $ 200
+                            .description.mt-3.pb-6.border-b.border-dashed
+                                p.text-xs.text-gray-400 Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.
+                                ul.mt-5.flex.items-center
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-wifi
+                                            span Free wifi
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-parking
+                                            span Parking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-smoking-ban 
+                                            span Non Smoking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-utensils
+                                            span Restaurant 
+                            .time.flex.items-center.justify-between.py-5
+                                button.px-4.py-2.rounded-lg.text-white(class="hover:bg-blue-500 duration-200 ease-linear") 2 Day 3 Night 
+                                .react 
+                                    ul.flex.items-center
+                                        li.p-2.bg-blue-200.w-10.h-10                                           
+                                            a(href="#")
+                                                i.fas.fa-retweet
+                                                span Find Directions
+                                        li.w-10.h-10.bg-blue-200.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-heart 
+                                                span Save
+                                        li.p-2.bg-blue-200.w-10.h-10.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-map-marker-alt
+                                                span On the map
+                    .item.px-3.rounded-t-lg
+
+                        figure.relative.rounded-t-lg
+                            img.rounded-t-xl(src="./assets/image/slide-5.jpg", alt="")
+                            .review.absolute.bottom-0.w-full.flex.justify-between.items-center.py-4.px-5.text-white
+                                .rate.text-yellow-300 
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star
+                                .review-customer.flex.items-center
+                                    .customer-review.mr-5.text-xs
+                                        strong.text-sm Very Good
+                                        br
+                                        | 27 Review 
+                                    .score.px-3.py-4.font-semibold 
+                                        span 5.00
+                        .info.p-5.border.bg-white
+                            .location.flex.items-center.justify-between.pb-6.border-b.border-dashed
+                                .area 
+                                    h3.text-base.font-bold.mb-3 Asia & African Cruise
+                                    a.text-transform.uppercase(href="#") 
+                                        i.fas.fa-map-marker-alt.text-yellow-300.w-5 
+                                        | 27th Brooklyn New York, USA
+                                .price 
+                                    h3.text-xl.font-bold $ 200
+                            .description.mt-3.pb-6.border-b.border-dashed
+                                p.text-xs.text-gray-400 Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.
+                                ul.mt-5.flex.items-center
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-wifi
+                                            span Free wifi
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-parking
+                                            span Parking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-smoking-ban 
+                                            span Non Smoking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-utensils
+                                            span Restaurant 
+                            .time.flex.items-center.justify-between.py-5
+                                button.px-4.py-2.rounded-lg.text-white(class="hover:bg-blue-500 duration-200 ease-linear") 2 Day 3 Night 
+                                .react 
+                                    ul.flex.items-center
+                                        li.p-2.bg-blue-200.w-10.h-10                                           
+                                            a(href="#")
+                                                i.fas.fa-retweet
+                                                span Find Directions
+                                        li.w-10.h-10.bg-blue-200.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-heart 
+                                                span Save
+                                        li.p-2.bg-blue-200.w-10.h-10.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-map-marker-alt
+                                                span On the map
+                    .item.px-3.rounded-t-lg
+
+                        figure.relative.rounded-t-lg
+                            img.rounded-t-xl(src="./assets/image/slide-6.jpg", alt="")
+                            .review.absolute.bottom-0.w-full.flex.justify-between.items-center.py-4.px-5.text-white
+                                .rate.text-yellow-300 
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star.mr-1
+                                    i.fas.fa-star
+                                .review-customer.flex.items-center
+                                    .customer-review.mr-5.text-xs
+                                        strong.text-sm Very Good
+                                        br
+                                        | 27 Review 
+                                    .score.px-3.py-4.font-semibold 
+                                        span 5.00
+                        .info.p-5.border.bg-white
+                            .location.flex.items-center.justify-between.pb-6.border-b.border-dashed
+                                .area 
+                                    h3.text-base.font-bold.mb-3 Asia & African Cruise
+                                    a.text-transform.uppercase(href="#") 
+                                        i.fas.fa-map-marker-alt.text-yellow-300.w-5 
+                                        | 27th Brooklyn New York, USA
+                                .price 
+                                    h3.text-xl.font-bold $ 200
+                            .description.mt-3.pb-6.border-b.border-dashed
+                                p.text-xs.text-gray-400 Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.
+                                ul.mt-5.flex.items-center
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-wifi
+                                            span Free wifi
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-parking
+                                            span Parking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-smoking-ban 
+                                            span Non Smoking
+                                    li.text-blue-200 
+                                        a(href="#")
+                                            i.fas.fa-utensils
+                                            span Restaurant 
+                            .time.flex.items-center.justify-between.py-5
+                                button.px-4.py-2.rounded-lg.text-white(class="hover:bg-blue-500 duration-200 ease-linear") 2 Day 3 Night 
+                                .react 
+                                    ul.flex.items-center
+                                        li.p-2.bg-blue-200.w-10.h-10                                           
+                                            a(href="#")
+                                                i.fas.fa-retweet
+                                                span Find Directions
+                                        li.w-10.h-10.bg-blue-200.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-heart 
+                                                span Save
+                                        li.p-2.bg-blue-200.w-10.h-10.flex.items-center.justify-center
+                                            a(href="#")
+                                                i.fas.fa-map-marker-alt
+                                                span On the map
+                                        
+        .chose.mb-20.bg-gray-100.py-20
+            
+            .container 
+
+                .heading.text-center.mb-10
+
+                    h2.text-2xl.font-bold.mb-5 WHY CHOOSE US
+                    p(class="lg:w-8/12 lg:mx-auto") Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.
+                  
+                .content.grid.grid-cols-2.gap-6(class="lg:grid-cols-4")
+
+                    .booking.p-4.text-center.bg-white.flex.flex-col    
+                        h2.text-gray-300.mb-5.text-6xl 01
+                        i.fas.fa-road.text-6xl.text-blue-400
+                        a.text-black.text-xl.mt-4(href="#") Rail Booking
+
+                    .booking.p-4.text-center.bg-white.flex.flex-col    
+                        h2.text-gray-300.mb-5.text-6xl 02
+                        i.fas.fa-utensils.text-6xl.text-blue-400
+                        a.text-black.text-xl.mt-4(href="#") Hotel Booking
+
+                    .booking.p-4.text-center.bg-white.flex.flex-col    
+                        h2.text-gray-300.mb-5.text-6xl 03
+                        i.fas.fa-ticket-alt.text-6xl.text-blue-400
+                        a.text-black.text-xl.mt-4(href="#") Ticket Booking
+                    
+                    .booking.p-4.text-center.bg-white.flex.flex-col    
+                        h2.text-gray-300.mb-5.text-6xl 04
+                        i.fas.fa-child.text-6xl.text-blue-400
+                        a.text-black.text-xl.mt-4(href="#") Amazing Booking
+
+        
+        .packages.mb-20 
+
+            .container 
+
+                .heading.text-center.mb-10
+
+                    h2.text-2xl.font-bold.mb-5 PRICING PACKAGES
+                    p(class="lg:w-8/12 lg:mx-auto") lorem ipsum dolor sit amet, consectetur adipisicing suscipit votas aperiam sorem ipsum dolor consectur adipisicing elit.
+                
+                .package-container.grid.grid-cols-1.gap-y-10(class="lg:grid-cols-3 lg:gap-y-0 lg:gap-x-10")
+
+                    .package.text-center.border.px-4.py-14.shadow-lg.bg-gray-50.duration-200.ease-linear(class="hover:bg-white")
+                        h2.text-xl.font-semibold Honneymoon Package 
+                        .price.mt-2.mb-3 
+                            p 
+                                span.blue.text-5xl.font-semibold
+                                    sup.text-3xl $
+                                    | 20
+                                span.block /Day
+                        .description.mb-5 
+                            p 4 nights in Honeymoon Suite.
+                            p Private luxury airport transfer.
+                            p Daily breakfast your suite.
+
+                        button.order Order now!
+
+                    .package.relative.text-center.border.px-4.py-14.shadow-lg.bg-white.duration-200.ease-linear(class="hover:bg-white")
+                        h2.text-xl.font-semibold Family Package 
+                        .ribbon    
+                            span.popular.text-white.bg-yellow-300 POPPULAR
+                        .price.mt-2.mb-3 
+                            p 
+                                span.blue.text-5xl.font-semibold
+                                    sup.text-3xl $
+                                    | 50
+                                span.block /Day
+                        .description.mb-5 
+                            p 4 nights in Honeymoon Suite.
+                            p Private luxury airport transfer.
+                            p Daily breakfast your suite.
+
+                        button.order.blue Order now!
+
+                    .package.text-center.border.px-4.py-14.shadow-lg.bg-gray-50.duration-200.ease-linear(class="hover:bg-white")
+                        h2.text-xl.font-semibold All Inclusive
+                        .price.mt-2.mb-3 
+                            p 
+                                span.blue.text-5xl.font-semibold
+                                    sup.text-3xl $
+                                    | 90
+                                span.block /Day
+                        .description.mb-5 
+                            p 4 nights in Honeymoon Suite.
+                            p Private luxury airport transfer.
+                            p Daily breakfast your suite.
+
+                        button.order Order now!
+        
+        .pattern-overlay 
+
+            .container.flex.items-center.justify-center
+
+                .content.z-10.p-6.w-full.text-center(class="lg:w-2/4 lg:mx-auto")
+
+                    p.text-2xl.text-black 21,215+ Hotel and Resorts Available!
+                    form.flex.relative(class="lg:mt-5" action="#") 
+                        input.text-black.px-2.py-3.w-full.border.rounded-r-lg.form-control( type="text" name="search" placeholder="Enter destination")
+                        span.h-full.items-center.flex.text-white.px-3.text-base.rounded-lg.absolute.top-0.right-0 Search now
+
+        
+        .footer 
+            .container 
+
+                .intro
+                    img(class="w-40" src="./assets/image/logo-footer.png", alt="") 
+
+
+
+
+
+
+
+                    
+
+
+                        
+                        
+                                    
+
+                        
+
+                      
+
+
+
+
