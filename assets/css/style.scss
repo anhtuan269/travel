@@ -48,18 +48,95 @@ a:hover {
     padding-right: 15px;
 }
 
-.drop-down .apsolute {
+.drop-down .table {
     opacity: 0;
     visibility: hidden;
     transition: all 0.2 linear;
     transform: translateY(-10px)
 }
 
-.drop-down:hover .apsolute {
+.drop-down:hover .table {
     opacity: 1;
     visibility: visible;
     transition: all 0.2 linear;
     transform: translateY(0);
+}
+
+
+.sub-menu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 130%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 12rem;
+    padding: 1rem 0;
+    margin: 0 0 0;
+    font-size: 0.875rem;
+    color: #8f9397;
+    text-align: left;
+    list-style: none;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 0 solid rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    transition:  all 0.3s ease-in-out;
+}
+
+.sub-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 3px;
+    opacity: 1;
+    background: #ffcd22;
+}
+
+.sub-menu li.drop-header {
+    font-weight: 600;
+    padding-top: 0.5rem;
+    font-size: 0.875rem;
+    display: block;
+    padding: .5rem 1.5rem;
+    margin-bottom: 0;
+    color: #6c757d;
+    white-space: nowrap;
+}
+
+.right-content ul li.sub:hover>.sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-15px);
+    transition:  all 0.3s ease-in-out;
+}
+.right-content ul li.mega-menu.sub:hover>.sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-24px);
+    transition:  all 0.3s ease-in-out;
+}
+
+.sub-menu li a {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1.5rem;
+    clear: both;
+    font-weight: 500;
+    color: #8f9397 !important;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.sub-menu li a:hover {
+    text-decoration: none;
+    background-color: #f8f9fa;
 }
 
 .hero {
@@ -251,6 +328,7 @@ button {
     transform: translateY(-10px);
     transition: all 0.2s ease-in-out
 }
+
 .package:hover {
     border-color: transparent;
     box-shadow: 0px 0px 40px rgb(83 88 93 / 10%);
@@ -305,7 +383,7 @@ button.order:hover {
 }
 
 .ribbon span::before {
-    content:"";
+    content: "";
     position: absolute;
     right: 0px;
     top: 100%;
@@ -344,23 +422,26 @@ button.order.blue:hover {
     transition: all 0.2s ease-in-out;
 }
 
-.pattern-overlay  {
+.pattern-overlay {
     position: relative;
     z-index: 1;
-    padding:3.8rem 0 ;
+    padding: 3.8rem 0;
 }
+
 .pattern-overlay p {
     line-height: 40px;
-    padding:20px 0;
+    padding: 20px 0;
 }
+
 form span {
     background: #5bc9e2;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
+
 form span:hover {
     transition: all .2s ease-in-out;
-    color:#212529;
+    color: #212529;
 }
 
 .pattern-overlay::before {
@@ -377,9 +458,46 @@ form span:hover {
     bottom: 0;
     z-index: 0;
 }
+
 // .pattern-overlay .container .content {
 //     z-index: 9999;
 // }
+
+.footer {
+    background: #343a40;
+    color: #d5d5d5;
+    padding-top: 4.5rem;
+    font-size: 13px;
+
+}
+
+.footer ul li {
+    display: flex;
+    margin-bottom: 1rem;
+    ;
+}
+
+.footer ul li i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.footer h2 {
+    color: #d5d5d5;
+    font-size: 16px;
+    padding: 0 0 12px 0;
+}
+
+.footer .copy-right {
+    background: #303438;
+    padding: 1.075rem 0;
+}
+
+.footer .copy-right p a:hover {
+    transition: all 0.2s ease-in-out;
+    color: #5bc9e2
+}
 
 @media screen and(min-width:768px) {
     .container {

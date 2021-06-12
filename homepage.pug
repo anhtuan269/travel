@@ -31,12 +31,12 @@ html
 
                             .language.mr-4
                                 .drop-down.relative.group
-                                    a.flex.items-center(href="#")
+                                    a.flex.items-center.py-3.-my-3(href="#")
                                         img.mr-1.w-5(src="./assets/image/uk.svg", alt="") 
                                         | English
                                         span.ml-2 
                                             i.fas.fa-chevron-down.text-xs
-                                    .absolute.opacity-0.invisible.z-0.bg-white.border.border-white.transform.w-60.top-8.shadow-xl(class="group-hover:visible   duration-200")
+                                    .table.absolute.bg-white.border.border-white.transform.w-60.top-full.shadow-xl.z-10
                                         ul  
                                             li.border-b.px-6.py-4 Sellect Language
 
@@ -100,7 +100,7 @@ html
 
             .main-header
 
-                .container.flex.justify-between.items-center 
+                .container.flex.justify-between.items-center.relative 
 
                     .logo.py-5
                         a(href="#") 
@@ -109,46 +109,252 @@ html
                     .right-content.flex.items-center.justify-center
                         .menu.hidden(class="xl:flex") 
                             ul.flex.items-center  
-                                li 
+                                li.sub.relative 
                                     a.active.py-6.px-2.flex.items-center.text-gray-400(href="#")
                                         | Home 
                                         span 
                                             i.fas.fa-chevron-down.text-xs.ml-1
-                                li 
+                                    ul.sub-menu
+                                         
+                                        li 
+                                            a(href="#") Home Layout 1
+                                        li 
+                                            a(href="#") Home Layout 2
+                                        li 
+                                            a(href="#") Home Layout 3
+                                        li 
+                                            a(href="#") Home Layout 4
+                                        li 
+                                            a(href="#") Home Layout 5
+                                        li 
+                                            a(href="#") Home Layout 6
+                                        li.drop-header  Header Style
+                                        li 
+                                            a(href="#") Header Style 1
+                                        li 
+                                            a(href="#") Header Style 2
+                                        li 
+                                            a(href="#") Header Style 3
+                                li.sub.relative  
                                     a.py-6.px-2.flex.items-center.text-gray-400(href="#")
                                         | Hotels 
                                         span 
                                             i.fas.fa-chevron-down.text-xs.ml-1
-                                li 
+
+                                    ul.sub-menu
+                                         
+                                        li 
+                                            a(href="#") Home Hotels
+                                        li 
+                                            a(href="#") List View
+                                        li 
+                                            a(href="#") Grid View
+                                        li 
+                                            a(href="#") Detailed
+                                        li 
+                                            a(href="#") Booking
+                                        li 
+                                            a(href="#") Thank You       
+                                        
+                                li.sub.relative  
                                     a.py-6.px-2.flex.items-center.text-gray-400(href="#")
                                         | Flights 
                                         span 
                                             i.fas.fa-chevron-down.text-xs.ml-1
-                                li 
+                                    ul.sub-menu
+                                         
+                                        li 
+                                            a(href="#") Home Flights
+                                        li 
+                                            a(href="#") List View
+                                        li 
+                                            a(href="#") Grid View
+                                        li 
+                                            a(href="#") Detailed
+                                        li 
+                                            a(href="#") Booking
+                                        li 
+                                            a(href="#") Thank You
+                                li.sub.relative 
                                     a.py-6.px-2.flex.items-center.text-gray-400(href="#")
                                         | Cars 
                                         span 
                                             i.fas.fa-chevron-down.text-xs.ml-1
-                                li 
+                                    ul.sub-menu
+                                         
+                                        li 
+                                            a(href="#") Home Cars
+                                        li 
+                                            a(href="#") List View
+                                        li 
+                                            a(href="#") Grid View
+                                        li 
+                                            a(href="#") Detailed
+                                        li 
+                                            a(href="#") Booking
+                                        li 
+                                            a(href="#") Thank You
+                                li.sub.relative  
                                     a.py-6.px-2.flex.items-center.text-gray-400(href="#")
                                         | Cruises 
                                         span.text-sm
                                             i.fas.fa-chevron-down.text-xs.ml-1
-                                li 
+                                    ul.sub-menu
+                                         
+                                        li 
+                                            a(href="#") Home Cruises
+                                        li 
+                                            a(href="#") List View
+                                        li 
+                                            a(href="#") Grid View
+                                        li 
+                                            a(href="#") Detailed
+                                        li 
+                                            a(href="#") Booking
+                                        li 
+                                            a(href="#") Thank You
+                                    
+                                li.sub.relative  
                                     a.py-6.px-2.flex.items-center.text-gray-400(href="#")
                                         | Tour 
                                         span 
                                             i.fas.fa-chevron-down.text-xs.ml-1
-                                li 
+                                    ul.sub-menu
+                                         
+                                        li 
+                                            a(href="#") Home Tour
+                                        li 
+                                            a(href="#") All Tour List
+                                        li 
+                                            a(href="#") All Tour Grid 
+                                        li 
+                                            a(href="#") Single Tour Page
+                                        li 
+                                            a(href="#") Single Tour Gallery
+                                        li 
+                                            a(href="#") Single Tour Booking
+                                li.sub.mega-menu 
                                     a.py-6.px-2.flex.items-center.text-gray-400(href="#")
                                         | Pages 
                                         span 
                                             i.fas.fa-chevron-down.text-xs.ml-1
-                                li 
+                                    .sub-menu(class="w-full") 
+
+                                        .container 
+
+                                            .row.grid.grid-cols-12
+
+                                                .has-sub.col-span-3 
+                                                    ul 
+                                                        li
+                                                            a(href="") About Us
+                                                        li
+                                                            a(href="") Services
+                                                        li
+                                                            a(href="") Gallery 4 column
+                                                        li
+                                                            a(href="") Gallery 3 column  
+                                                        li
+                                                            a(href="") Gallery 2 column 
+                                                .has-sub.col-span-3 
+                                                    ul 
+                                                        li
+                                                            a(href="") Faq 1
+                                                        li
+                                                            a(href="") 404 Page
+                                                        li
+                                                            a(href="") Cooming Soon
+                                                        li
+                                                            a(href="") Login  
+                                                        li
+                                                            a(href="") Registrtion
+                                                .has-sub.col-span-3 
+                                                    ul 
+                                                        li
+                                                            a(href="") \Layouts Two Sidebar
+                                                        li
+                                                            a(href="") Layouts Full Width
+                                                        li
+                                                            a(href="") Contacts Us
+                                                        li
+                                                            a(href="") Polices  
+                                                        li
+                                                            a(href="") Site Map
+                                                .has-sub.col-span-3 
+                                                    ul 
+                                                        li
+                                                            a(href="") Blog Right Sidebar
+                                                        li
+                                                            a(href="") Blog Left Sidebar
+                                                        li
+                                                            a(href="") Blog Full Width
+                                                        li
+                                                            a(href="") Blog Details  
+                                                       
+
+                                li.sub.mega-menu  
                                     a.py-6.px-2.flex.items-center.text-gray-400(href="#")
                                         | Elements
                                         span 
                                             i.fas.fa-chevron-down.text-xs.ml-1
+                                    .sub-menu(class="w-full") 
+
+                                        .container 
+
+                                            .row.grid.grid-cols-12
+
+                                                .has-sub.col-span-3 
+                                                    ul 
+                                                        li
+                                                            a(href="") Accordion
+                                                        li
+                                                            a(href="") Action Box
+                                                        li
+                                                            a(href="") Alerts
+                                                        li
+                                                            a(href="") Animated Headlines  
+                                                        li
+                                                            a(href="") Blockquote
+                                                        li
+                                                            a(href="") Button
+                                                .has-sub.col-span-3 
+                                                    ul 
+                                                        li
+                                                            a(href="") Clients
+                                                        li
+                                                            a(href="") Counter
+                                                        li
+                                                            a(href="") Divider
+                                                        li
+                                                            a(href="") Feature BOx
+                                                        li
+                                                            a(href="") Forms
+                                                        li
+                                                            a(href="") Grid
+                                                .has-sub.col-span-3 
+                                                    ul 
+                                                        li
+                                                            a(href="") List Styles
+                                                        li
+                                                            a(href="") Map
+                                                        li
+                                                            a(href="") Modal
+                                                        li
+                                                            a(href="") Skill  
+                                                        li
+                                                            a(href="") Social Icon
+                                                        li
+                                                            a(href="") Tab
+                                                .has-sub.col-span-3 
+                                                    ul 
+                                                        li
+                                                            a(href="") Table
+                                                        li
+                                                            a(href="") Team
+                                                        li
+                                                            a(href="") Typography
+                                                        li
+                                                            a(href="") Video
                                 
 
                         .icon.flex
@@ -157,7 +363,7 @@ html
                                     img.w-5.duration-200.ease-linear( class="group-hover:opacity-0 group-hover:z-0 " src="./assets/image/menu.svg", alt="")
                                     img.w-5.duration-200.ease-linear.opacity-0.absolute.top-0(class="group-hover:opacity-100 group-hover:z-10" src="./assets/image/menu-hover.svg", alt="")
                             .search.px-2 
-                                span 
+                                span.cursor-pointer
                                     i.fas.fa-search
                     
                         .button.hidden.ml-3(class="xl:inline-block")     
@@ -359,7 +565,7 @@ html
                 .content(class="lg:grid lg:grid-cols-3 lg:gap-x-6")
                     .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
                         .image.relative.group
-                            img.rounded-t-lg.duration-200(src="./assets/image/room1.jpg", alt="")
+                            img.rounded-t-lg.duration-200.w-full(src="./assets/image/room1.jpg", alt="")
                             .content 
                                 i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
                                 button(class="group-hover:opacity-100") read more 
@@ -386,7 +592,7 @@ html
                     
                     .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
                         .image.relative.group
-                            img.rounded-t-lg.duration-200(src="./assets/image/room2.jpg", alt="")
+                            img.rounded-t-lg.duration-200.w-full(src="./assets/image/room2.jpg", alt="")
                             .content 
                                 i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
                                 button(class="group-hover:opacity-100") read more 
@@ -413,7 +619,7 @@ html
                     
                     .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
                         .image.relative.group
-                            img.rounded-t-lg.duration-200(src="./assets/image/room5.jpg", alt="")
+                            img.rounded-t-lg.duration-200.w-full(src="./assets/image/room5.jpg", alt="")
                             .content 
                                 i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
                                 button(class="group-hover:opacity-100") read more 
@@ -440,7 +646,7 @@ html
 
                     .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
                         .image.relative.group
-                            img.rounded-t-lg.duration-200(src="./assets/image/room6.jpg", alt="")
+                            img.rounded-t-lg.duration-200.w-full(src="./assets/image/room6.jpg", alt="")
                             .content 
                                 i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
                                 button(class="group-hover:opacity-100") read more 
@@ -467,7 +673,7 @@ html
 
                     .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
                         .image.relative.group
-                            img.rounded-t-lg.duration-200(src="./assets/image/room7.jpg", alt="")
+                            img.rounded-t-lg.duration-200.w-full(src="./assets/image/room7.jpg", alt="")
                             .content 
                                 i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
                                 button(class="group-hover:opacity-100") read more 
@@ -495,7 +701,7 @@ html
                             
                     .item.border.duration-200.ease-linear.shadow-lg.rounded-t-lg.mb-10
                         .image.relative.group
-                            img.rounded-t-lg.duration-200(src="./assets/image/room8.jpg", alt="")
+                            img.rounded-t-lg.duration-200.w-full(src="./assets/image/room8.jpg", alt="")
                             .content 
                                 i.far.fa-heart.far.fa-heart.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg.absolute.top-3.right-4.text-white.p-2.text-xl.rounded-lg
                                 button(class="group-hover:opacity-100") read more 
@@ -1050,28 +1256,114 @@ html
 
         
         .footer 
-            .container 
 
-                .intro
-                    img(class="w-40" src="./assets/image/logo-footer.png", alt="") 
+            .container(class="lg:grid lg:grid-cols-12 lg:gap-x-8")
+                 
 
-
-
-
-
-
-
+                .intro.mb-10(class="col-span-3")
+                    img(class="w-52" src="./assets/image/logo-footer.png", alt="") 
+                    p.mt-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                
+                
+                
                     
-
-
+                .contact.mb-10.hidden(class="lg:block col-span-3 ")
                         
-                        
-                                    
+                        ul 
+                            li(class=" ")
 
-                        
+                                i.fas.fa-map-marked-alt
+                                | 216 Coburn Shahi Road 
+                                |Mumbai, Near Center Road, IL 
+                                |54785.
+                            li 
 
-                      
+                                i.fas.fa-headphones-alt
+                                | (547) 457-5757
+                            li 
+
+                                i.far.fa-envelope
+                                | help@travelGo.com
+                            li 
+
+                                i.far.fa-clock
+                                p 
+                                    |Mon - Fri:
+                                    strong 09:00 - 21:00
+                                    br
+                                    |Sat& Sun :
+                                    strong closed 
+
+                .quick-menu.mb-10(class="col-span-2")
+                    h2 QUICK LNK 
+                    ul 
+                        li
+                            a(href="#")  About
+                        li
+                            a(href="#")  Contact
+                        li
+                            a(href="#")  Home
+                        li
+                            a(href="#")  Blog
+                        li
+                            a(href="#")  Porfolio
+
+                .quick-menu.mb-10(class="col-span-2")
+                    h2 COMPANY
+                    ul 
+                        li
+                            a(href="#")  Hekp
+                        li
+                            a(href="#")  Careers
+                        li  
+                            a(href="#")  Terms & Conditions
+                        li
+                            a(href="#")  Privay & Policy
+                        li
+                            a(href="#")  FAQs
+
+                .quick-menu.mb-10(class="col-span-2")
+                    h2 SUPPORT  
+                    ul 
+                        li
+                            a(href="#")  Documentation
+                        li
+                            a(href="#")  knowledge Base
+                        li
+                            a(href="#")  Forum
+                        li
+                            a(href="#")  contac
+                        li
+                            a(href="#")  Terms of Use
+                
+                .contact.mb-10(class="lg:hidden")
+                    
+                    ul 
+                        li(class="w-10/12 ")
+
+                            i.fas.fa-map-marked-alt
+                            | 216 Coburn Shahi Road 
+                            |Mumbai, Near Center Road, IL 
+                            |54785.
+                        li 
+
+                            i.fas.fa-headphones-alt
+                            | (547) 457-5757
+                        li 
+
+                            i.far.fa-envelope
+                            | help@travelGo.com
+                        li 
+
+                            i.far.fa-clock
+                            p 
+                                |Mon - Fri:
+                                strong 09:00 - 21:00
+                                br
+                                |Sat& Sun :
+                                strong closed 
 
 
-
-
+            .copy-right.flex.justify-center
+                p.py-4 ©2019 All Rights Reserved by
+                    a.ml-1(href="#") TravelGo.                                   

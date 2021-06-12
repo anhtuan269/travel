@@ -49,7 +49,7 @@ a:hover {
   padding-right: 15px;
 }
 
-.drop-down .apsolute {
+.drop-down .table {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.2 linear;
@@ -58,13 +58,95 @@ a:hover {
           transform: translateY(-10px);
 }
 
-.drop-down:hover .apsolute {
+.drop-down:hover .table {
   opacity: 1;
   visibility: visible;
   -webkit-transition: all 0.2 linear;
   transition: all 0.2 linear;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.sub-menu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 130%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 12rem;
+  padding: 1rem 0;
+  margin: 0 0 0;
+  font-size: 0.875rem;
+  color: #8f9397;
+  text-align: left;
+  list-style: none;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 0 solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 3px;
+  opacity: 1;
+  background: #ffcd22;
+}
+
+.sub-menu li.drop-header {
+  font-weight: 600;
+  padding-top: 0.5rem;
+  font-size: 0.875rem;
+  display: block;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0;
+  color: #6c757d;
+  white-space: nowrap;
+}
+
+.right-content ul li.sub:hover > .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.right-content ul li.mega-menu.sub:hover > .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-menu li a {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1.5rem;
+  clear: both;
+  font-weight: 500;
+  color: #8f9397 !important;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.sub-menu li a:hover {
+  text-decoration: none;
+  background-color: #f8f9fa;
 }
 
 .hero {
@@ -412,6 +494,43 @@ form span:hover {
   left: 0;
   bottom: 0;
   z-index: 0;
+}
+
+.footer {
+  background: #343a40;
+  color: #d5d5d5;
+  padding-top: 4.5rem;
+  font-size: 13px;
+}
+
+.footer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.footer ul li i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.footer h2 {
+  color: #d5d5d5;
+  font-size: 16px;
+  padding: 0 0 12px 0;
+}
+
+.footer .copy-right {
+  background: #303438;
+  padding: 1.075rem 0;
+}
+
+.footer .copy-right p a:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #5bc9e2;
 }
 
 @media screen and (min-width: 768px) {

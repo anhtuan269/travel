@@ -23,8 +23,8 @@
           <div class="hidden xl:flex xl:justify-between">
             <div class="nav-top-left flex justify-center items-center">
               <div class="language mr-4">
-                <div class="drop-down relative group"><a class="flex items-center" href="#"><img class="mr-1 w-5" src="./assets/image/uk.svg" alt=""/>English<span class="ml-2"> <i class="fas fa-chevron-down text-xs"></i></span></a>
-                  <div class="absolute opacity-0 invisible z-0 bg-white border border-white transform w-60 top-8 shadow-xl group-hover:visible   duration-200">
+                <div class="drop-down relative group"><a class="flex items-center py-3 -my-3" href="#"><img class="mr-1 w-5" src="./assets/image/uk.svg" alt=""/>English<span class="ml-2"> <i class="fas fa-chevron-down text-xs"></i></span></a>
+                  <div class="table absolute bg-white border border-white transform w-60 top-full shadow-xl z-10">
                     <ul> 
                       <li class="border-b px-6 py-4">Sellect Language</li>
                       <li class="px-6 pt-6 pb-2 hover:bg-gray-100 "><a class="flex items-center" href="#"><img class="mr-3 w-5" src="./assets/image/uk.svg" alt=""/>English</a></li>
@@ -53,24 +53,169 @@
         </div>
       </div>
       <div class="main-header">
-        <div class="container flex justify-between items-center"> 
+        <div class="container flex justify-between items-center relative"> 
           <div class="logo py-5"><a href="#"> <img class="w-44" src="./assets/image/logo-header.png" alt=""/></a></div>
           <div class="right-content flex items-center justify-center">
             <div class="menu hidden xl:flex"> 
               <ul class="flex items-center"> 
-                <li> <a class="active py-6 px-2 flex items-center text-gray-400" href="#">Home <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
-                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Hotels <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
-                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Flights <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
-                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Cars <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
-                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Cruises <span class="text-sm"><i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
-                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Tour <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
-                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Pages <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
-                <li> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Elements<span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a></li>
+                <li class="sub relative"> <a class="active py-6 px-2 flex items-center text-gray-400" href="#">Home <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a>
+                  <ul class="sub-menu">
+                    <li> <a href="#">Home Layout 1</a></li>
+                    <li> <a href="#">Home Layout 2</a></li>
+                    <li> <a href="#">Home Layout 3</a></li>
+                    <li> <a href="#">Home Layout 4</a></li>
+                    <li> <a href="#">Home Layout 5</a></li>
+                    <li> <a href="#">Home Layout 6</a></li>
+                    <li class="drop-header"> Header Style</li>
+                    <li> <a href="#">Header Style 1</a></li>
+                    <li> <a href="#">Header Style 2</a></li>
+                    <li> <a href="#">Header Style 3</a></li>
+                  </ul>
+                </li>
+                <li class="sub relative"> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Hotels <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a>
+                  <ul class="sub-menu">
+                    <li> <a href="#">Home Hotels</a></li>
+                    <li> <a href="#">List View</a></li>
+                    <li> <a href="#">Grid View</a></li>
+                    <li> <a href="#">Detailed</a></li>
+                    <li> <a href="#">Booking</a></li>
+                    <li> <a href="#">Thank You       </a></li>
+                  </ul>
+                </li>
+                <li class="sub relative"> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Flights <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a>
+                  <ul class="sub-menu">
+                    <li> <a href="#">Home Flights</a></li>
+                    <li> <a href="#">List View</a></li>
+                    <li> <a href="#">Grid View</a></li>
+                    <li> <a href="#">Detailed</a></li>
+                    <li> <a href="#">Booking</a></li>
+                    <li> <a href="#">Thank You</a></li>
+                  </ul>
+                </li>
+                <li class="sub relative"> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Cars <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a>
+                  <ul class="sub-menu">
+                    <li> <a href="#">Home Cars</a></li>
+                    <li> <a href="#">List View</a></li>
+                    <li> <a href="#">Grid View</a></li>
+                    <li> <a href="#">Detailed</a></li>
+                    <li> <a href="#">Booking</a></li>
+                    <li> <a href="#">Thank You</a></li>
+                  </ul>
+                </li>
+                <li class="sub relative"> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Cruises <span class="text-sm"><i class="fas fa-chevron-down text-xs ml-1"></i></span></a>
+                  <ul class="sub-menu">
+                    <li> <a href="#">Home Cruises</a></li>
+                    <li> <a href="#">List View</a></li>
+                    <li> <a href="#">Grid View</a></li>
+                    <li> <a href="#">Detailed</a></li>
+                    <li> <a href="#">Booking</a></li>
+                    <li> <a href="#">Thank You</a></li>
+                  </ul>
+                </li>
+                <li class="sub relative"> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Tour <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a>
+                  <ul class="sub-menu">
+                    <li> <a href="#">Home Tour</a></li>
+                    <li> <a href="#">All Tour List</a></li>
+                    <li> <a href="#">All Tour Grid </a></li>
+                    <li> <a href="#">Single Tour Page</a></li>
+                    <li> <a href="#">Single Tour Gallery</a></li>
+                    <li> <a href="#">Single Tour Booking</a></li>
+                  </ul>
+                </li>
+                <li class="sub mega-menu"> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Pages <span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a>
+                  <div class="sub-menu w-full"> 
+                    <div class="container"> 
+                      <div class="row grid grid-cols-12">
+                        <div class="has-sub col-span-3"> 
+                          <ul> 
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Gallery 4 column</a></li>
+                            <li><a href="">Gallery 3 column  </a></li>
+                            <li><a href="">Gallery 2 column </a></li>
+                          </ul>
+                        </div>
+                        <div class="has-sub col-span-3"> 
+                          <ul> 
+                            <li><a href="">Faq 1</a></li>
+                            <li><a href="">404 Page</a></li>
+                            <li><a href="">Cooming Soon</a></li>
+                            <li><a href="">Login  </a></li>
+                            <li><a href="">Registrtion</a></li>
+                          </ul>
+                        </div>
+                        <div class="has-sub col-span-3"> 
+                          <ul> 
+                            <li><a href="">\Layouts Two Sidebar</a></li>
+                            <li><a href="">Layouts Full Width</a></li>
+                            <li><a href="">Contacts Us</a></li>
+                            <li><a href="">Polices  </a></li>
+                            <li><a href="">Site Map</a></li>
+                          </ul>
+                        </div>
+                        <div class="has-sub col-span-3"> 
+                          <ul> 
+                            <li><a href="">Blog Right Sidebar</a></li>
+                            <li><a href="">Blog Left Sidebar</a></li>
+                            <li><a href="">Blog Full Width</a></li>
+                            <li><a href="">Blog Details  </a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="sub mega-menu"> <a class="py-6 px-2 flex items-center text-gray-400" href="#">Elements<span> <i class="fas fa-chevron-down text-xs ml-1"></i></span></a>
+                  <div class="sub-menu w-full"> 
+                    <div class="container"> 
+                      <div class="row grid grid-cols-12">
+                        <div class="has-sub col-span-3"> 
+                          <ul> 
+                            <li><a href="">Accordion</a></li>
+                            <li><a href="">Action Box</a></li>
+                            <li><a href="">Alerts</a></li>
+                            <li><a href="">Animated Headlines  </a></li>
+                            <li><a href="">Blockquote</a></li>
+                            <li><a href="">Button</a></li>
+                          </ul>
+                        </div>
+                        <div class="has-sub col-span-3"> 
+                          <ul> 
+                            <li><a href="">Clients</a></li>
+                            <li><a href="">Counter</a></li>
+                            <li><a href="">Divider</a></li>
+                            <li><a href="">Feature BOx</a></li>
+                            <li><a href="">Forms</a></li>
+                            <li><a href="">Grid</a></li>
+                          </ul>
+                        </div>
+                        <div class="has-sub col-span-3"> 
+                          <ul> 
+                            <li><a href="">List Styles</a></li>
+                            <li><a href="">Map</a></li>
+                            <li><a href="">Modal</a></li>
+                            <li><a href="">Skill  </a></li>
+                            <li><a href="">Social Icon</a></li>
+                            <li><a href="">Tab</a></li>
+                          </ul>
+                        </div>
+                        <div class="has-sub col-span-3"> 
+                          <ul> 
+                            <li><a href="">Table</a></li>
+                            <li><a href="">Team</a></li>
+                            <li><a href="">Typography</a></li>
+                            <li><a href="">Video</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="icon flex">
               <div class="mobile-menu relative visible xl:hidden px-2"><span class="group cursor-pointer"><img class="w-5 duration-200 ease-linear group-hover:opacity-0 group-hover:z-0 " src="./assets/image/menu.svg" alt=""/><img class="w-5 duration-200 ease-linear opacity-0 absolute top-0 group-hover:opacity-100 group-hover:z-10" src="./assets/image/menu-hover.svg" alt=""/></span></div>
-              <div class="search px-2"> <span> <i class="fas fa-search"></i></span></div>
+              <div class="search px-2"> <span class="cursor-pointer"><i class="fas fa-search"></i></span></div>
             </div>
             <div class="button hidden ml-3 xl:inline-block">    
               <button class="px-3 py-2 border rounded-md text-white hover:bg-blue-500 duration-500 ease-linear">Online Booking</button>
@@ -237,7 +382,7 @@
         </div>
         <div class="content lg:grid lg:grid-cols-3 lg:gap-x-6">
           <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
-            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room1.jpg" alt=""/>
+            <div class="image relative group"><img class="rounded-t-lg duration-200 w-full" src="./assets/image/room1.jpg" alt=""/>
               <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
                 <button class="group-hover:opacity-100">read more </button>
               </div>
@@ -256,7 +401,7 @@
             </div>
           </div>
           <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
-            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room2.jpg" alt=""/>
+            <div class="image relative group"><img class="rounded-t-lg duration-200 w-full" src="./assets/image/room2.jpg" alt=""/>
               <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
                 <button class="group-hover:opacity-100">read more </button>
               </div>
@@ -275,7 +420,7 @@
             </div>
           </div>
           <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
-            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room5.jpg" alt=""/>
+            <div class="image relative group"><img class="rounded-t-lg duration-200 w-full" src="./assets/image/room5.jpg" alt=""/>
               <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
                 <button class="group-hover:opacity-100">read more </button>
               </div>
@@ -294,7 +439,7 @@
             </div>
           </div>
           <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
-            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room6.jpg" alt=""/>
+            <div class="image relative group"><img class="rounded-t-lg duration-200 w-full" src="./assets/image/room6.jpg" alt=""/>
               <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
                 <button class="group-hover:opacity-100">read more </button>
               </div>
@@ -313,7 +458,7 @@
             </div>
           </div>
           <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
-            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room7.jpg" alt=""/>
+            <div class="image relative group"><img class="rounded-t-lg duration-200 w-full" src="./assets/image/room7.jpg" alt=""/>
               <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
                 <button class="group-hover:opacity-100">read more </button>
               </div>
@@ -332,7 +477,7 @@
             </div>
           </div>
           <div class="item border duration-200 ease-linear shadow-lg rounded-t-lg mb-10">
-            <div class="image relative group"><img class="rounded-t-lg duration-200" src="./assets/image/room8.jpg" alt=""/>
+            <div class="image relative group"><img class="rounded-t-lg duration-200 w-full" src="./assets/image/room8.jpg" alt=""/>
               <div class="content"> <i class="far fa-heart far fa-heart absolute top-3 right-4 text-white p-2 text-xl rounded-lg absolute top-3 right-4 text-white p-2 text-xl rounded-lg"></i>
                 <button class="group-hover:opacity-100">read more </button>
               </div>
@@ -714,8 +859,71 @@
       </div>
     </div>
     <div class="footer"> 
-      <div class="container"> 
-        <div class="intro"><img class="w-40" src="./assets/image/logo-footer.png" alt=""/></div>
+      <div class="container lg:grid lg:grid-cols-12 lg:gap-x-8">
+        <div class="intro mb-10 col-span-3"><img class="w-52" src="./assets/image/logo-footer.png" alt=""/>
+          <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="contact mb-10 hidden lg:block col-span-3 ">
+          <ul> 
+            <li class=" "><i class="fas fa-map-marked-alt"></i>216 Coburn Shahi Road 
+              Mumbai, Near Center Road, IL 
+              54785.
+            </li>
+            <li> <i class="fas fa-headphones-alt"></i>(547) 457-5757</li>
+            <li> <i class="far fa-envelope"></i>help@travelGo.com</li>
+            <li> <i class="far fa-clock"></i>
+              <p>
+                 Mon - Fri:<strong>09:00 - 21:00</strong><br/>Sat& Sun :<strong>closed </strong></p>
+            </li>
+          </ul>
+        </div>
+        <div class="quick-menu mb-10 col-span-2">
+          <h2>QUICK LNK </h2>
+          <ul> 
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Contact</a></li>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Blog</a></li>
+            <li><a href="#"> Porfolio</a></li>
+          </ul>
+        </div>
+        <div class="quick-menu mb-10 col-span-2">
+          <h2>COMPANY</h2>
+          <ul> 
+            <li><a href="#"> Hekp</a></li>
+            <li><a href="#"> Careers</a></li>
+            <li> <a href="#"> Terms & Conditions</a></li>
+            <li><a href="#"> Privay & Policy</a></li>
+            <li><a href="#"> FAQs</a></li>
+          </ul>
+        </div>
+        <div class="quick-menu mb-10 col-span-2">
+          <h2>SUPPORT  </h2>
+          <ul> 
+            <li><a href="#"> Documentation</a></li>
+            <li><a href="#"> knowledge Base</a></li>
+            <li><a href="#"> Forum</a></li>
+            <li><a href="#"> contac</a></li>
+            <li><a href="#"> Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="contact mb-10 lg:hidden">
+          <ul> 
+            <li class="w-10/12 "><i class="fas fa-map-marked-alt"></i>216 Coburn Shahi Road 
+              Mumbai, Near Center Road, IL 
+              54785.
+            </li>
+            <li> <i class="fas fa-headphones-alt"></i>(547) 457-5757</li>
+            <li> <i class="far fa-envelope"></i>help@travelGo.com</li>
+            <li> <i class="far fa-clock"></i>
+              <p>
+                 Mon - Fri:<strong>09:00 - 21:00</strong><br/>Sat& Sun :<strong>closed </strong></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy-right flex justify-center">
+        <p class="py-4">©2019 All Rights Reserved by<a class="ml-1" href="#">TravelGo.                                   </a></p>
       </div>
     </div>
   </body>
