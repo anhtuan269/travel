@@ -55,13 +55,43 @@ a:hover {
     transform: translateY(-10px)
 }
 
-.drop-down:hover .table {
+.drop-down.active .table {
     opacity: 1;
     visibility: visible;
     transition: all 0.2 linear;
     transform: translateY(0);
 }
 
+.account {
+    cursor: pointer;
+    ul {
+        opacity: 0;
+        visibility: hidden;
+        top:1.9rem;
+        transform: scale(0.8);
+        transition: all 0.2s ease-in-out;
+        li {
+            a{
+
+                color:#8f9397;
+                font-size: 13px;
+            }
+        }
+        li:hover {
+            background:#f8f9fa;
+        }
+    }
+
+}
+
+.account.active {
+    ul {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+    }
+}
 
 .sub-menu {
     position: absolute;
@@ -82,7 +112,7 @@ a:hover {
     background-clip: padding-box;
     border: 0 solid rgba(0, 0, 0, 0.1);
     border-radius: 0;
-    transition:  all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .sub-menu::before {
@@ -112,13 +142,14 @@ a:hover {
     visibility: visible;
     opacity: 1;
     transform: translateY(-15px);
-    transition:  all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+
 .right-content ul li.mega-menu.sub:hover>.sub-menu {
     visibility: visible;
     opacity: 1;
     transform: translateY(-24px);
-    transition:  all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .sub-menu li a {
@@ -146,12 +177,49 @@ a:hover {
 }
 
 .tap-container label {
+    border-top: 4px solid rgba(0, 0, 0, 0.01);
     background: rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
 }
 
-.tap-container label.active {
-    background: rgba(255, 255, 255, 0.4);
-    color: #222222;
+.tap-container {
+    margin-top: -168px;
+
+    #tab1.active label {
+        background: rgba(255, 255, 255, 0.4);
+        color: #222222;
+        border-top: 4px solid #5bc9e2;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #tab2.active label {
+        background: rgba(255, 255, 255, 0.4);
+        border-top: 4px solid #5bc9e2;
+        transition: all 0.2s ease-in-out;
+        color: #222222;
+    }
+
+    #tab3.active label {
+        background: rgba(255, 255, 255, 0.4);
+        border-top: 4px solid #5bc9e2;
+        transition: all 0.2s ease-in-out;
+        color: #222222;
+    }
+
+    #tab4.active label {
+        background: rgba(255, 255, 255, 0.4);
+        color: #222222;
+        border-top: 4px solid #5bc9e2;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #tab5.active label {
+        background: rgba(255, 255, 255, 0.4);
+        border-top: 4px solid #5bc9e2;
+        transition: all 0.2s ease-in-out;
+        color: #222222;
+    }
+
 }
 
 .form-group span {
@@ -499,10 +567,34 @@ form span:hover {
     color: #5bc9e2
 }
 
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-form {
+    height: 385px;
+    width: 100%;
+}
+
 @media screen and(min-width:768px) {
     .container {
         max-width: 720px;
 
+    }
+
+    .tab-form {
+        height: 96px;
     }
 }
 

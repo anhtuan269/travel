@@ -41,8 +41,13 @@
               </ul>
             </div>
             <div class="top-right-nav flex items-center justify-center">
-              <div class="account mr-4"><a href="#"><span class="mr-2"><i class="far text-gray-400 fa-user"></i></span>English<span> <i class="fas fa-chevron-down text-xs"></i></span></a></div>
-              <div class="contact mr-4"><a href="">Account </a></div>
+              <div class="account mr-4 relative"><a href="#"><span class="mr-2"><i class="far text-gray-400 fa-user"></i></span>Account <span> <i class="fas fa-chevron-down text-xs"></i></span>
+                  <ul class="absolute bg-white w-48 py-4 z-10 border shadow-xl">
+                    <li class="py-3 px-6"> <a href="#">Register </a></li>
+                    <li class="py-3 px-6"> <a href="#">Login </a></li>
+                    <li class="py-3 px-6"> <a href="#">Setting</a></li>
+                  </ul></a></div>
+              <div class="contact mr-4"><a href="">contact</a></div>
               <ul class="social flex justify-center items-center">
                 <li class="relative mr-4"> <a class="group" href="#"><img class="w-4 group-hover:opacity-0 group-hover:z-0 duration-200 ease-linear" src="./assets/image/facebook.svg" alt=""/><img class="opacity-0 absolute top-0 duration-200 ease-linear w-4  group-hover:opacity-100 group-hover:z-10" src="./assets/image/facebook-hover.svg" alt=""/></a></li>
                 <li class="relative mr-4"> <a class="group" href="#"><img class="w-4 group-hover:opacity-0 group-hover:z-0 duration-200 ease-linear" src="./assets/image/twitter.svg" alt=""/><img class="opacity-0 absolute top-0 duration-200 ease-linear w-4  group-hover:opacity-100 group-hover:z-10" src="./assets/image/twitter-hover.svg" alt=""/></a></li>
@@ -236,55 +241,150 @@
     </div>
     <div class="feature-box"> 
       <div class="container"> 
-        <div class="tap-container">
-          <div class="-mt-40 grid grid-cols-5 text-white">
-            <input class="hidden" id="tab1" type="radio" name="tabs"/>
-            <label class="active p-5 text-lg font-bold border-t-4 border-green-500 flex justify-center items-center" for="tab1"><i class="mr-3 fas fa-utensils"></i><span class="hidden xl:inline-block">Hotels</span></label>
-            <input class="hidden" id="tab1" type="radio" name="tabs"/>
-            <label class="flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-helicopter"></i><span class="hidden xl:inline-block">Flight</span></label>
-            <input class="hidden" id="tab1" type="radio" name="tabs"/>
-            <label class="flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-car-side"></i><span class="hidden xl:inline-block">Cars</span></label>
-            <input class="hidden" id="tab1" type="radio" name="tabs"/>
-            <label class="flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-ship"></i><span class="hidden xl:inline-block">Cruises</span></label>
-            <input class="hidden" id="tab1" type="radio" name="tabs"/>
-            <label class="flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-route"></i><span class="hidden xl:inline-block">Tours</span></label>
-          </div>
-          <section class="px-4 py-6 bg-white shadow-lg" id="content-1">
-            <div class="a  lg:grid lg:grid-cols-12">
-              <div class="form-group mb-4 relative  focus:outline-none lg:col-span-4 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
-                <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="City, Point of Interest or U.S. Zip Code"/>
-              </div>
-              <div class="form-group mb-4 relative lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"> </span>
-                <input class="w-full pl-8 py-3 pr-4 border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Check-in"/>
-              </div>
-              <div class="form-group mb-4 relative  lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"></span>
-                <input class="pl-8 py-3 pr-4 border w-full focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Check-out"/>
-              </div>
-              <div class="form-group mb-4 relative  lg:col-span-1 lg:mb-0 lg:mr-4"> <img class="absolute right-1 w-3 bg-white z-0 transform  top-2/4 -translate-y-1/3" src="./assets/image/download.svg" alt=""/>
-                <select class="sellect bg-white w-full h-12 border pl-1 z-10 focus:outline-none focus:ring-1 focus:ring-yellow-500">
-                  <option selected="selected">Room </option>
-                  <option value="location 01">01</option>
-                  <option value="location 02">02</option>
-                  <option value="location 03">03</option>
-                  <option value="location 04">04</option>
-                  <option value="location 05">05</option>
-                </select>
-              </div>
-              <div class="form-group mb-4 relative lg:col-span-1 lg:mb-0 lg:mr-4"> <img class="absolute right-1 w-3 bg-white transform  top-2/4 -translate-y-1/3" src="./assets/image/download.svg" alt=""/>
-                <select class="sellect bg-white w-full h-12 border pl-1 focus:outline-none focus:ring-1 focus:ring-yellow-500">
-                  <option selected="selected">Guest </option>
-                  <option value="location 01">01</option>
-                  <option value="location 02">02</option>
-                  <option value="location 03">03</option>
-                  <option value="location 04">04</option>
-                  <option value="location 05">05</option>
-                </select>
-              </div>
-              <div class="form-group mb-4 lg:col-span-2 lg:mb-0 "> 
-                <button class="p-3 text-base w-full text-white rounded-sm duration ease-linear duration-200 hover:bg-black">Search</button>
-              </div>
+        <div class="tap-container relative">
+          <div class="grid grid-cols-5 text-white">
+            <div class="active" id="tab1">              
+              <label class="cursor-pointer p-5 text-lg font-bold flex justify-center items-center" for="tab1"><i class="mr-3 fas fa-utensils"></i><span class="hidden xl:inline-block">Hotels</span></label>
             </div>
-          </section>
+            <div id="tab2">                  
+              <label class="cursor-pointer flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-helicopter"></i><span class="hidden xl:inline-block">Flight</span></label>
+            </div>
+            <div id="tab3">                      
+              <label class="cursor-pointer flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-car-side"></i><span class="hidden xl:inline-block">Cars</span></label>
+            </div>
+            <div id="tab4">                      
+              <label class="cursor-pointer flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-ship"></i><span class="hidden xl:inline-block">Cruises</span></label>
+            </div>
+            <div id="tab5">                      
+              <label class="cursor-pointer flex justify-center items-center p-5 text-lg font-bold" for="tab1"><i class="mr-3 fas fa-route"></i><span class="hidden xl:inline-block">Tours</span></label>
+            </div>
+          </div>
+          <div class="tab-form bg-white shadow-lg">
+            <section class="px-4 py-6 w-full absolute" id="content-1">
+              <div class="a  lg:grid lg:grid-cols-12">
+                <div class="form-group mb-4 relative  focus:outline-none lg:col-span-4 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
+                  <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="City, Point of Interest or U.S. Zip Code"/>
+                </div>
+                <div class="form-group mb-4 relative lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"> </span>
+                  <input class="w-full pl-8 py-3 pr-4 border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Check-in"/>
+                </div>
+                <div class="form-group mb-4 relative  lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"></span>
+                  <input class="pl-8 py-3 pr-4 border w-full focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Check-out"/>
+                </div>
+                <div class="form-group mb-4 relative  lg:col-span-1 lg:mb-0 lg:mr-4"> <img class="absolute right-1 w-3 bg-white z-0 transform  top-2/4 -translate-y-1/3" src="./assets/image/download.svg" alt=""/>
+                  <select class="sellect bg-white w-full h-12 border pl-1 z-10 focus:outline-none focus:ring-1 focus:ring-yellow-500">
+                    <option selected="selected">Room </option>
+                    <option value="location 01">01</option>
+                    <option value="location 02">02</option>
+                    <option value="location 03">03</option>
+                    <option value="location 04">04</option>
+                    <option value="location 05">05</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 relative lg:col-span-1 lg:mb-0 lg:mr-4"> <img class="absolute right-1 w-3 bg-white transform  top-2/4 -translate-y-1/3" src="./assets/image/download.svg" alt=""/>
+                  <select class="sellect bg-white w-full h-12 border pl-1 focus:outline-none focus:ring-1 focus:ring-yellow-500">
+                    <option selected="selected">Guest </option>
+                    <option value="location 01">01</option>
+                    <option value="location 02">02</option>
+                    <option value="location 03">03</option>
+                    <option value="location 04">04</option>
+                    <option value="location 05">05</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 lg:col-span-2 lg:mb-0 "> 
+                  <button class="p-3 text-base w-full text-white rounded-sm duration ease-linear duration-200 hover:bg-black">Search</button>
+                </div>
+              </div>
+            </section>
+            <section class="hide px-4 py-6 w-full absolute" id="content-2">
+              <div class="a  lg:grid lg:grid-cols-12">
+                <div class="form-group mb-4 relative  focus:outline-none lg:col-span-3 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
+                  <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="From : City, Airport U.S. Zip "/>
+                </div>
+                <div class="form-group mb-4 relative  focus:outline-none lg:col-span-3 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
+                  <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="To : City, Airport U.S. Zip"/>
+                </div>
+                <div class="form-group mb-4 relative lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"> </span>
+                  <input class="w-full pl-8 py-3 pr-4 border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Departing"/>
+                </div>
+                <div class="form-group mb-4 relative  lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"></span>
+                  <input class="pl-8 py-3 pr-4 border w-full focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Returning"/>
+                </div>
+                <div class="form-group mb-4 lg:col-span-2 lg:mb-0 "> 
+                  <button class="p-3 text-base w-full text-white rounded-sm duration ease-linear duration-200 hover:bg-black">Search            </button>
+                </div>
+              </div>
+            </section>
+            <section class="hide px-4 py-6 w-full absolute" id="content-3">
+              <div class="a  lg:grid lg:grid-cols-12">
+                <div class="form-group mb-4 relative  focus:outline-none lg:col-span-3 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
+                  <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Pick-up Location "/>
+                </div>
+                <div class="form-group mb-4 relative  focus:outline-none lg:col-span-3 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
+                  <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Drop-off Location"/>
+                </div>
+                <div class="form-group mb-4 relative lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"> </span>
+                  <input class="w-full pl-8 py-3 pr-4 border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Pick-up Day"/>
+                </div>
+                <div class="form-group mb-4 relative  lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"></span>
+                  <input class="pl-8 py-3 pr-4 border w-full focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Drop-off Day"/>
+                </div>
+                <div class="form-group mb-4 lg:col-span-2 lg:mb-0 "> 
+                  <button class="p-3 text-base w-full text-white rounded-sm duration ease-linear duration-200 hover:bg-black">Search</button>
+                </div>
+              </div>
+            </section>
+            <section class="hide px-4 py-6 w-full absolute" id="content-4">
+              <div class="a  lg:grid lg:grid-cols-12">
+                <div class="form-group mb-4 relative  focus:outline-none lg:col-span-4 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
+                  <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="enter a destination or hotel name"/>
+                </div>
+                <div class="form-group mb-4 relative  lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"></span>
+                  <input class="pl-8 py-3 pr-4 border w-full focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Departure Date"/>
+                </div>
+                <div class="form-group mb-4 relative  lg:col-span-2 lg:mb-0 lg:mr-4"> <img class="absolute right-1 w-3 bg-white z-0 transform  top-2/4 -translate-y-1/3" src="./assets/image/download.svg" alt=""/>
+                  <select class="sellect bg-white w-full h-12 border pl-1 z-10 focus:outline-none focus:ring-1 focus:ring-yellow-500">
+                    <option selected="selected">Cruise Length </option>
+                    <option value="location 01">1-2 night</option>
+                    <option value="location 02">2-3 night</option>
+                    <option value="location 03">3-4 night</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 relative lg:col-span-2 lg:mb-0 lg:mr-4"> <img class="absolute right-1 w-3 bg-white transform  top-2/4 -translate-y-1/3" src="./assets/image/download.svg" alt=""/>
+                  <select class="sellect bg-white w-full h-12 border pl-1 focus:outline-none focus:ring-1 focus:ring-yellow-500">
+                    <option selected="selected">Cruise Line </option>
+                    <option value="location 02">Azamara Club Cruises</option>
+                    <option value="location 03">Celebrity Cruises</option>
+                    <option value="location 04">Cruise & Maritime</option>
+                    <option value="location 05">Oceania Cruises</option>
+                    <option value="location 06">Peter Deilmann Cruises</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 lg:col-span-2 lg:mb-0 "> 
+                  <button class="p-3 text-base w-full text-white rounded-sm duration ease-linear duration-200 hover:bg-black">Search</button>
+                </div>
+              </div>
+            </section>
+            <section class="hide px-4 py-6 w-full absolute" id="content-5">
+              <div class="a  lg:grid lg:grid-cols-12">
+                <div class="form-group mb-4 relative  focus:outline-none lg:col-span-3 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
+                  <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="From : City, Airport U.S. Zip "/>
+                </div>
+                <div class="form-group mb-4 relative  focus:outline-none lg:col-span-3 lg:mb-0 lg:mr-4"><span class="left-1 text-yellow-400 fas fa-map-marker-alt"></span>
+                  <input class="w-full pl-8 py-3 pr-4 duration-200 ease-linear border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="To : City, Airport U.S. Zip"/>
+                </div>
+                <div class="form-group mb-4 relative lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"> </span>
+                  <input class="w-full pl-8 py-3 pr-4 border focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Departing"/>
+                </div>
+                <div class="form-group mb-4 relative  lg:col-span-2 lg:mb-0 lg:mr-4"> <span class="left-1 text-yellow-400 far fa-calendar-alt"></span>
+                  <input class="pl-8 py-3 pr-4 border w-full focus:outline-none focus:ring-1 focus:ring-yellow-500" type="text" placeholder="Returning"/>
+                </div>
+                <div class="form-group mb-4 lg:col-span-2 lg:mb-0 "> 
+                  <button class="p-3 text-base w-full text-white rounded-sm duration ease-linear duration-200 hover:bg-black">Search</button>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </div>
